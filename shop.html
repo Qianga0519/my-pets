@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/package/swiper-bundle.css">
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/shop.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <button id="btn-scroll-to-top" onclick="scrollToTop()"></button>
+    <div class="top-notification-bar">
+        <div class="container">
+            <div class="row">
+                <div class="notification-entry text-center col-xs-12">
+                    <span>All Featured Product 50% off <a href="">Buy Now</a></span>
+                    <button class="notification-close-btn"><i class="fa-solid fa-x"></i><button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="shopify-section-header" id="sticky-header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="top-header col-md-3 col-sm-6 col-xs-6 col-6">
+                        <div class="logo home-2">
+                            <a href="/" class="theme-logo">
+                                <img src="./public/images/logo-final_240x.png"
+                                    alt="My Pets - Animal Pets Shopify Theme " />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mid-header col-md-7 hidden-sm hidden-xs">
+                        <nav id="main-nav">
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="index.html">HOME</a></button>
+                                <div class="dropdown-content">
+                                    <a href="#"> home 1</a>
+                                    <a href="#">home 2 (box)</a>
+                                    <a href="#">Home 3</a>
+                                    <a href="#">Home 4</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item nav-shop">
+                                <button class="dropbtn"> <a href="shop.html">shop</a></button>
+                                <div class="dropdown-content">
+                                    <ul class="dropdown-menus">
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">instruments</a>
+                                            <ul>
+                                                <li><a href="">Clipper Blade</a></li>
+                                                <li><a href="">Coarse-Toothed Comb</a></li>
+                                                <li><a href="">Nail Clippers</a></li>
+                                                <li><a href="">Dog Rake</a></li>
+                                                <li><a href="">Cat Toy</a></li>
+                                                <li><a href="">Nail Grinder</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li"><a class="title-mega-menu" href="">Foods</a>
+                                            <ul>
+                                                <li><a href="">Raw meats</a></li>
+                                                <li><a href="">canned </a></li>
+                                                <li><a href="">freeze dried </a></li>
+                                                <li><a href="">kibble</a></li>
+                                                <li><a href="">dehydrated</a></li>
+                                                <li><a href="">Rx line</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">Accessories</a>
+                                            <ul>
+                                                <li><a href="">Rabbit </a></li>
+                                                <li><a href="">Cattery Cages </a></li>
+                                                <li><a href="">Cat toy</a></li>
+                                                <li><a href="">Dog Gumboots</a></li>
+                                                <li><a href="">Kong Extreme</a></li>
+                                                <li><a href="">show cage</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li image-menu">
+                                            <a href="">
+                                                <img class="lazyload" data-src="" src="./public/images/menu_shop.jpg"
+                                                    alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="">services</a></button>
+                                <div class="dropdown-content">
+                                    <a href="">Full Grooming</a>
+                                    <a href="">Bath and Dry</a>
+                                    <a href="">Styling</a>
+                                    <a href="">Medical Bath</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="">pages</a></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Blog</a>
+                                    <a href="#">About Us</a>
+                                    <a href="#">Shipping Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="">product</a></button>
+                                <div class="dropdown-content">
+                                    <a href="#">Simple Product</a>
+                                    <a href="#"> Variable Product</a>
+                                    <a href="#"> Affiliate Link Product</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="">contact</a></button>
+                                <!-- <div class="dropdown-content">
+                                </div> -->
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bot-header col-md-2 col-sm-6 col-xs-6 col-6">
+                        <div class="menu-list text-right">
+                            <div class="dropdown menu-list-item">
+                                <button class="dropbtn"><i class="fa fa-user" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="/account">My account</a>
+                                    <a href="/pages/wishlist">Wishlist</a>
+                                    <a href="/checkout">Checkout</a>
+                                </div>
+                            </div>
+                            <div class="dropdown menu-list-item search-header">
+                                <form action="">
+                                    <button class="dropbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <div class="dropdown-content">
+                                        <input id="Search" name="q" value="" placeholder="Search our store">
+                                        <button type="submit" class="search-btn"><i class="fa fa-search"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dropdown menu-list-item cart-header">
+                                <button class="dropbtn"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                    <div class="your-cart">
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                    </div>
+                                    <div class="cart-total">
+                                        <h6>
+                                            <span class="lbl">Total:</span> <span class="shopping-cart__total"><span
+                                                    class="money">$90.00 USD</span></span>
+                                        </h6>
+                                        <a href="/checkout" class="checkout-btn">Check Out</a>
+                                    </div>
+                                    <!-- <span class="not-item-cart">Your Cart is empty</span> -->
+                                </div>
+                            </div>
+                            <button class="toggle-menu-nav" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                    class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="breadcrumbs-section mb-100">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="breadcrumbs-inner text-center ptb-100">
+                                <h1 class="breadcrumbs-title">Products</h1>
+                                <nav class="" role="navigation" aria-label="breadcrumbs">
+                                    <ul class="breadcrumb-list">
+                                        <li>
+                                            <a href="/" title="Back to the frontpage">Home</a>
+                                        </li>
+                                        <li>
+                                            /
+                                        </li>
+                                        <span>Products</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="shop" class="shop-area mb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-9 pull-right">
+                        <div class="toolbar">
+                            <div class="view-mode">
+                                <span class="view-style">View Style:</span>
+                                <button type="button" title="Grid view"
+                                    class="change-view change-grid change-view--active" data-view="grid">
+                                    <span class="icon-fallback-text">
+                                        <i class="fa fa-th" data-view="grid"></i>
+                                        <span class="fallback-text">Grid view</span>
+                                    </span>
+                                </button>
+                                <button type="button" title="List view" data-view="list"
+                                    class="change-view change-list">
+                                    <span class="icon-fallback-text">
+                                        <i class="fa fa-th-list" data-view="list"></i>
+                                        <span class="fallback-text">List view</span>
+                                    </span>
+                                </button>
+                            </div>
+
+                            <div class="form-horizontal">
+                                <div class="sorter">
+                                    <select name="SortBy" id="SortBy">
+                                        <option value="manual">Featured</option>
+                                        <option value="best-selling">Best Selling</option>
+                                        <option value="title-ascending">Alphabetically, A-Z</option>
+                                        <option value="title-descending">Alphabetically, Z-A</option>
+                                        <option value="price-ascending">Price, low to high</option>
+                                        <option value="price-descending">Price, high to low</option>
+                                        <option value="created-descending">Date, new to old</option>
+                                        <option value="created-ascending">Date, old to new</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- script -->
+                        </div>
+                        <div class="tab-content">
+                            <div class="shop-grid-area">
+                                <div class="row table-product">
+                                    <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="">
+                                                    <img class=""
+                                                        src="//my-pets-1.myshopify.com/cdn/shop/products/34_7b50728f-0266-4845-ab7a-10be310be32e_large.jpg?v=1508992290"
+                                                        alt="Steel special bowl">
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <a href="javascript:void(0);" class="quick-view modal-view">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="cart-btn quick-view"
+                                                    title="Add to Cart"><i class="fa fa-cart-plus"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h6 class="product-name">
+                                                    <a href="">Steel
+                                                        special bowl</a>
+                                                </h6>
+                                                <div class="rating-box">
+                                                    <span class="shopify-product-reviews-badge"
+                                                        data-id="11004909837"></span>
+                                                </div>
+                                                <div class="single-product-review">
+                                                    <div class="product-info__review">
+                                                        <div class="rating">
+                                                            <!-- <span class="shopify-product-reviews-badge"></span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h6 class="special-price">
+                                                        <span><span class="money">$150.00</span></span>
+                                                    </h6>
+                                                </div>
+
+                                                <p class="product-short-desc">
+                                                </p>
+                                                <p class="description"> There are many variations of passages of Lorem
+                                                    Ipsum available, but
+                                                    the majority have suffered alteration in some form, by injected
+                                                    humour, or randomised words which don't look even slightly
+                                                    believable.</p>
+                                                <div class="actions">
+                                                    <a href="javascript:void(0);" class="cart-btn"
+                                                        title="Add to Cart">Add to Cart</a>
+                                                    <a href="javascript:void(0);" class="quick-view-btn modal-view">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="shop-wishlist-button">
+                                                        <a class="action-wishlist tile-actions--btn wishlist-btn wishlist"
+                                                            href="javascript: void(0)">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.single-product -->
+                                    </div>
+                                    <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="">
+                                                    <img class=""
+                                                        src="//my-pets-1.myshopify.com/cdn/shop/products/34_7b50728f-0266-4845-ab7a-10be310be32e_large.jpg?v=1508992290"
+                                                        alt="Steel special bowl">
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <a href="javascript:void(0);" class="quick-view modal-view">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="cart-btn quick-view"
+                                                    title="Add to Cart"><i class="fa fa-cart-plus"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h6 class="product-name">
+                                                    <a href="">Steel
+                                                        special bowl</a>
+                                                </h6>
+                                                <div class="rating-box">
+                                                    <span class="shopify-product-reviews-badge"
+                                                        data-id="11004909837"></span>
+                                                </div>
+                                                <div class="single-product-review">
+                                                    <div class="product-info__review">
+                                                        <div class="rating">
+                                                            <!-- <span class="shopify-product-reviews-badge"></span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h6 class="special-price">
+                                                        <span><span class="money">$150.00</span></span>
+                                                    </h6>
+                                                </div>
+
+                                                <p class="product-short-desc">
+                                                </p>
+                                                <p class="description"> There are many variations of passages of Lorem
+                                                    Ipsum available, but
+                                                    the majority have suffered alteration in some form, by injected
+                                                    humour, or randomised words which don't look even slightly
+                                                    believable.</p>
+                                                <div class="actions">
+                                                    <a href="javascript:void(0);" class="cart-btn"
+                                                        title="Add to Cart">Add to Cart</a>
+                                                    <a href="javascript:void(0);" class="quick-view-btn modal-view">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="shop-wishlist-button">
+                                                        <a class="action-wishlist tile-actions--btn wishlist-btn wishlist"
+                                                            href="javascript: void(0)">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.single-product -->
+                                    </div>
+
+                                    <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="">
+                                                    <img class=""
+                                                        src="//my-pets-1.myshopify.com/cdn/shop/products/34_7b50728f-0266-4845-ab7a-10be310be32e_large.jpg?v=1508992290"
+                                                        alt="Steel special bowl">
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <a href="javascript:void(0);" class="quick-view modal-view">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="cart-btn quick-view"
+                                                    title="Add to Cart"><i class="fa fa-cart-plus"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h6 class="product-name">
+                                                    <a href="">Steel
+                                                        special bowl</a>
+                                                </h6>
+                                                <div class="rating-box">
+                                                    <span class="shopify-product-reviews-badge"
+                                                        data-id="11004909837"></span>
+                                                </div>
+                                                <div class="single-product-review">
+                                                    <div class="product-info__review">
+                                                        <div class="rating">
+                                                            <!-- <span class="shopify-product-reviews-badge"></span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h6 class="special-price">
+                                                        <span><span class="money">$150.00</span></span>
+                                                    </h6>
+                                                </div>
+
+                                                <p class="product-short-desc">
+                                                </p>
+                                                <p class="description"> There are many variations of passages of Lorem
+                                                    Ipsum available, but
+                                                    the majority have suffered alteration in some form, by injected
+                                                    humour, or randomised words which don't look even slightly
+                                                    believable.</p>
+                                                <div class="actions">
+                                                    <a href="javascript:void(0);" class="cart-btn"
+                                                        title="Add to Cart">Add to Cart</a>
+                                                    <a href="javascript:void(0);" class="quick-view-btn modal-view">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="shop-wishlist-button">
+                                                        <a class="action-wishlist tile-actions--btn wishlist-btn wishlist"
+                                                            href="javascript: void(0)">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.single-product -->
+                                    </div>
+                                    <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="">
+                                                    <img class=""
+                                                        src="//my-pets-1.myshopify.com/cdn/shop/products/34_7b50728f-0266-4845-ab7a-10be310be32e_large.jpg?v=1508992290"
+                                                        alt="Steel special bowl">
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <a href="javascript:void(0);" class="quick-view modal-view">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="cart-btn quick-view"
+                                                    title="Add to Cart"><i class="fa fa-cart-plus"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h6 class="product-name">
+                                                    <a href="">Steel
+                                                        special bowl</a>
+                                                </h6>
+                                                <div class="rating-box">
+                                                    <span class="shopify-product-reviews-badge"
+                                                        data-id="11004909837"></span>
+                                                </div>
+                                                <div class="single-product-review">
+                                                    <div class="product-info__review">
+                                                        <div class="rating">
+                                                            <!-- <span class="shopify-product-reviews-badge"></span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h6 class="special-price">
+                                                        <span><span class="money">$150.00</span></span>
+                                                    </h6>
+                                                </div>
+
+                                                <p class="product-short-desc">
+                                                </p>
+                                                <p class="description"> There are many variations of passages of Lorem
+                                                    Ipsum available, but
+                                                    the majority have suffered alteration in some form, by injected
+                                                    humour, or randomised words which don't look even slightly
+                                                    believable.</p>
+                                                <div class="actions">
+                                                    <a href="javascript:void(0);" class="cart-btn"
+                                                        title="Add to Cart">Add to Cart</a>
+                                                    <a href="javascript:void(0);" class="quick-view-btn modal-view">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="shop-wishlist-button">
+                                                        <a class="action-wishlist tile-actions--btn wishlist-btn wishlist"
+                                                            href="javascript: void(0)">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.single-product -->
+                                    </div>
+                                    <div class="grid-item col-lg-4 col-md-6 col-sm-6 col-xs-6">
+                                        <div class="single-product">
+                                            <div class="product-img">
+                                                <a href="">
+                                                    <img class=""
+                                                        src="//my-pets-1.myshopify.com/cdn/shop/products/34_7b50728f-0266-4845-ab7a-10be310be32e_large.jpg?v=1508992290"
+                                                        alt="Steel special bowl">
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <a href="javascript:void(0);" class="quick-view modal-view">
+                                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" class="cart-btn quick-view"
+                                                    title="Add to Cart"><i class="fa fa-cart-plus"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h6 class="product-name">
+                                                    <a href="">Steel
+                                                        special bowl</a>
+                                                </h6>
+                                                <div class="rating-box">
+                                                    <span class="shopify-product-reviews-badge"
+                                                        data-id="11004909837"></span>
+                                                </div>
+                                                <div class="single-product-review">
+                                                    <div class="product-info__review">
+                                                        <div class="rating">
+                                                            <!-- <span class="shopify-product-reviews-badge"></span> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h6 class="special-price">
+                                                        <span><span class="money">$150.00</span></span>
+                                                    </h6>
+                                                </div>
+
+                                                <p class="product-short-desc">
+                                                </p>
+                                                <p class="description"> There are many variations of passages of Lorem
+                                                    Ipsum available, but
+                                                    the majority have suffered alteration in some form, by injected
+                                                    humour, or randomised words which don't look even slightly
+                                                    believable.</p>
+                                                <div class="actions">
+                                                    <a href="javascript:void(0);" class="cart-btn"
+                                                        title="Add to Cart">Add to Cart</a>
+                                                    <a href="javascript:void(0);" class="quick-view-btn modal-view">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </a>
+                                                    <div class="shop-wishlist-button">
+                                                        <a class="action-wishlist tile-actions--btn wishlist-btn wishlist"
+                                                            href="javascript: void(0)">
+                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.single-product -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pagination">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="pagination-area">
+
+                                    <div class="pagination-links">
+                                        <ul>
+                                            <li>
+                                                <span class="page current">1</span>
+                                                <span class="page">
+                                                    <a href="/collections/all?page=2&amp;sort_by=title-descending&amp;view=list"
+                                                        title="">2</a>
+                                                </span>
+                                                <span class="next">
+                                                    <a href="/collections/all?page=2&amp;sort_by=title-descending&amp;view=list"
+                                                        title="">&gt;</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pull-left col-sm-12 col-lg-3 col-xs-12">
+                        <div class="sidebar-widget-area storefront-filter">
+                            <form class="filter-form" name="testform" id="myform">
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Availability</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" value="1" id="Filter-availability-1">
+                                                <label for="Filter-availability-1">In stock (19)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" value="0" id="Filter-availability-2">
+                                                <label for="Filter-availability-2">Out of stock (2)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Price</h6>
+                                    <div class="menu-list cl_list">
+                                        <div class="sidebar-list-style">
+                                            <div class="checkbox-container categories-list sidebar-price-filter">
+                                                <div class="filter-range-from">
+                                                    <span>$</span>
+                                                    <input name="filter.v.price.gte" id="Filter-Price-2" type="number"
+                                                        placeholder="0" min="0" max="150.00">
+                                                    <label for="Filter-Price-2">From</label>
+                                                </div>
+                                                <div class="filter-price-range-to">
+                                                    <span>$</span>
+                                                    <input name="filter.v.price.lte" id="Filter-Price-2" type="number"
+                                                        placeholder="150.00" min="0" max="150.00">
+                                                    <label for="Filter-Price-2">To</label>
+                                                </div>
+
+                                            </div>
+                                            <input class="theme-default-button" type="submit" value="Filter">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Product type</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+
+                                            <li>
+                                                <input type="checkbox" name="filter.p.product_type" value="chair"
+                                                    id="Filter-product-type-3">
+                                                <label for="Filter-product-type-3">chair (6)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.p.product_type" value="table"
+                                                    id="Filter-product-type-4">
+                                                <label for="Filter-product-type-4">table (3)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.p.product_type" value="table-lamp"
+                                                    id="Filter-product-type-5">
+                                                <label for="Filter-product-type-5">table-lamp (2)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Brand</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="filter.p.vendor" value="brothers"
+                                                    id="Filter-brand-1">
+                                                <label for="Filter-brand-1">brothers (4)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.p.vendor" value="hatil"
+                                                    id="Filter-brand-2">
+                                                <label for="Filter-brand-2">hatil (4)</label>
+                                            </li>
+
+                                            <li>
+                                                <input type="checkbox" name="filter.p.vendor" value="rokomari"
+                                                    id="Filter-brand-6">
+                                                <label for="Filter-brand-6">rokomari (3)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Color</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.color" value="black"
+                                                    id="Filter-color-1">
+                                                <label for="Filter-color-1">black (6)</label>
+                                            </li>
+
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.color" value="cyan"
+                                                    id="Filter-color-4">
+                                                <label for="Filter-color-4">cyan (4)</label>
+                                            </li>
+
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.color" value="pink"
+                                                    id="Filter-color-11">
+                                                <label for="Filter-color-11">pink (2)</label>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Material</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.material" value="steel"
+                                                    id="Filter-material-3">
+                                                <label for="Filter-material-3">steel (2)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.material" value="wood"
+                                                    id="Filter-material-4">
+                                                <label for="Filter-material-4">wood (9)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="single-sidebar-widget">
+                                    <h6 class="widget-title">Size</h6>
+                                    <div class="menu-list cl_list">
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="xs"
+                                                    id="Filter-size-1">
+                                                <label for="Filter-size-1">xs (10)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="M"
+                                                    id="Filter-size-2">
+                                                <label for="Filter-size-2">M (8)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="L"
+                                                    id="Filter-size-3">
+                                                <label for="Filter-size-3">L (8)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="xl"
+                                                    id="Filter-size-4">
+                                                <label for="Filter-size-4">xl (10)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="ml"
+                                                    id="Filter-size-5">
+                                                <label for="Filter-size-5">ml (10)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" name="filter.v.option.size" value="X"
+                                                    id="Filter-size-6">
+                                                <label for="Filter-size-6">X (8)</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer-area">
+        <div class="footer-top ">
+            <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="logo">
+                                <div class="footer-logo">
+                                    <a href="/">
+                                        <img src="./public/images/logo.png" alt="My Pets - Animal Pets Shopify Theme ">
+                                    </a>
+                                </div>
+                                <div class="address">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>Your contact information here. <br>Demo information.</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                            <p>+88 3333 6789</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>info@example.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title">Our Services</h6>
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/full-grooming"
+                                                title="">Full Grooming</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/bath-and-dry"
+                                                title="">Bath and Dry</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/styling"
+                                                title="">Styling</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/medical-bath"
+                                                title="">Medical Bath</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+
+                                <h6 class="widget-title">Quick Menu</h6>
+
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="/account" title="">My account</a></li>
+                                        <li><a href="/pages/wishlist" title="">Wishlist</a></li>
+                                        <li><a href="/checkout" title="">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title newsletter-title">Newsletter</h6>
+                                <div class="single-footer-newsletter">
+                                    <p>Lorem ipsum dolor sit amet, consectt us adip isicing elit, sed do edunt.</p>
+                                    <div id="mc_embed_signup">
+                                        <form action="" id="Contact_footer" class="contact-form">
+                                            <input type="hidden" name="form_type" value="customer"><input type="hidden"
+                                                name="utf8" value="✓">
+                                            <div class="submit-form">
+                                                <input class="form-control" type="email" id="Email"
+                                                    placeholder="email@example.com" autocorrect="off"
+                                                    autocapitalize="off">
+                                                <div class="clear">
+                                                    <button type="submit" id="subscribe" class="button" name="commit">
+                                                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="copyright-text">
+                            <p></p>
+                            <p>Copyright © 2021 <strong>MyPets </strong>| Built with <strong>MyPets</strong> by
+                                <strong>MyPets</strong>.
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="single-footer-soical">
+                            <ul>
+                                <li><a href="#" title="Google-plus"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.footer-bottom -->
+    </footer>
+    <script src="./public/package/swiper-bundle.min.js"></script>
+    <script src="./public/js/home-swiper.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script>
+        const tableProduct = document.querySelector('.table-product')
+        const listProudctView = tableProduct.querySelectorAll('.grid-item');
+        const viewMode = document.querySelector('.view-mode')
+        var viewModePoduct = 'grid'
+        viewMode.addEventListener('click', (e) => {
+            let mode = e.target.dataset.view;
+            console.log(mode)
+            if (mode == 'grid') {
+                viewMode.querySelector('.change-grid').classList.add('change-view--active')
+                viewMode.querySelector('.change-list').classList.remove('change-view--active')
+
+                viewGrid();
+                return
+            }
+            viewMode.querySelector('.change-grid').classList.remove('change-view--active')
+            viewMode.querySelector('.change-list').classList.add('change-view--active')
+            viewList();
+        });
+
+        function viewList() {
+            listProudctView.forEach(element => {
+                element.classList.remove('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
+                element.classList.add('list-view', 'col-12');
+            });
+        }
+
+        function viewGrid() {
+            listProudctView.forEach(element => {
+                element.classList.add('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
+                element.classList.remove('list-view', 'col-12');
+            });
+
+        }
+    </script>
+</body>
+
+</html>

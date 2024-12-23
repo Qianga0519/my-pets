@@ -1,0 +1,664 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Montserrat';
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 400;
+
+        margin: 0 0 10px;
+    }
+
+    ul {
+        list-style: outside none none;
+        margin    : 0;
+        padding   : 0;
+    }
+}
+
+main#main-content {
+    .breadcrumbs-section {
+        background: #f8f8f8;
+        .breadcrumbs {
+            .breadcrumbs-inner {
+                color         : $color-text-gray-6;
+                text-transform: capitalize;
+
+                color: $color-text-gray-6;
+
+
+
+                nav {
+                    display: block;
+
+                    ul {
+                        li {
+                            display      : inline-block;
+                            margin-right : 12px;
+                            position     : relative;
+                            margin-bottom: 0;
+
+                            a {
+                                color          : $color-text-gray-6;
+                                transition     : all .3s ease 0s;
+                                text-decoration: none;
+                            }
+
+                            span {
+                                color: $color-text-gray-9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #shop {
+        .pull-right {
+
+            order : 1;
+            margin: 48px 0 0;
+            float : right !important;
+
+            .toolbar {
+                background: red;
+
+                .view-mode {
+                    span.view-style {
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        font-family: 'Raleway', sans-serif;
+                        float      : left;
+
+                        .fallback-text {
+                            position: absolute;
+                            overflow: hidden;
+                            clip    : rect(0 0 0 0);
+                            height  : 1px;
+                            width   : 1px;
+                            margin  : -1px;
+                            padding : 0;
+                            border  : 0;
+                        }
+                    }
+
+                    .change-view {
+                        border-right      : 1px solid #e8e8e8;
+                        color             : #aaa;
+                        display           : block;
+                        float             : left;
+                        font-size         : 14px;
+                        line-height       : 1;
+                        margin-top        : 3px;
+                        padding           : 0 10px !important;
+                        -webkit-transition: all .3s ease 0s;
+                        transition        : all .3s ease 0s;
+                        background        : none;
+                        border            : 0 none;
+
+                    }
+
+                    .change-view--active {
+                        cursor: default;
+                        color : $color-green;
+                    }
+                }
+
+                .form-horizontal {
+                    .sorter {
+                        margin-left: 25px;
+                        float      : right;
+                        position   : relative;
+                        overflow   : hidden;
+
+                        select {
+                            -webkit-appearance: none;
+                            -moz-appearance   : none;
+                            appearance        : none;
+                            text-indent       : .01px;
+                            text-overflow     : "";
+                            text-transform    : none;
+                            background        : #fbfbfb none repeat scroll 0 0;
+                            border            : 1px solid #ddd;
+                            border-radius     : 0;
+                            font-family       : Raleway, sans-serif;
+                            font-size         : 12px;
+                            width             : 165px;
+                            height            : 28px;
+                            line-height       : 26px;
+                            padding           : 0 0 0 15px !important;
+                            border-top        : none;
+                        }
+
+                        &::after {
+                            content       : "\f107";
+                            font-family   : 'FontAwesome';
+                            position      : absolute;
+                            background    : #f1f1f1 none repeat scroll 0px 0px;
+                            border        : 1px solid #DDD;
+                            border-radius : 0;
+                            color         : #777;
+                            width         : 34px;
+                            height        : 28px;
+                            line-height   : 28px;
+                            top           : 0;
+                            right         : 0;
+                            pointer-events: none;
+                            text-align    : center;
+                        }
+                    }
+                }
+            }
+
+            .tab-content {
+                .shop-grid-area {
+
+
+                    .table-product {
+                        padding   : 40px 0 0;
+                        text-align: center;
+                        width     : 100%;
+
+                        .grid-item {
+                            overflow: hidden;
+
+                            .single-product {
+                                margin: 0 0 38px;
+
+                                .product-img {
+                                    border    : 1px solid transparent;
+                                    display   : block;
+                                    position  : relative;
+                                    text-align: center;
+
+                                    a {
+                                        display: block;
+
+                                        img {
+                                            max-width: 100%;
+                                            height   : auto;
+                                            width    : 100%;
+                                        }
+                                    }
+
+                                    .product-overlay {
+                                        position          : absolute;
+                                        width             : 100%;
+                                        height            : 100%;
+                                        background        : #0003 none repeat scroll 0 0;
+                                        top               : 0;
+                                        left              : 0;
+                                        opacity           : 0;
+                                        filter            : alpha(opacity=0);
+                                        pointer-events    : none;
+                                        visibility        : hidden;
+                                        z-index           : 999;
+                                        -webkit-transition: all .4s ease 0s;
+                                        transition        : all .4s ease 0s;
+
+                                    }
+
+                                    a.quick-view {
+                                        background-color: white;
+                                        display         : flex;
+                                        position        : absolute;
+                                        width           : 40px;
+                                        height          : 40px;
+                                        z-index         : 2;
+                                        top             : calc(50% + 30px);
+                                        transition      : all .7s ease 0s;
+                                        justify-content : center;
+                                        align-items     : center;
+                                        text-decoration : none;
+                                        opacity         : 0;
+                                        visibility      : hidden;
+
+                                        &:hover {
+                                            background-color: $color-green;
+
+                                            i {
+                                                transition: all .3s ease 0s;
+                                                color     : white;
+                                            }
+                                        }
+
+                                        i {
+                                            font-size: 20px;
+                                            color    : $color-green;
+                                        }
+                                    }
+
+                                    a.modal-view {
+                                        right: 54%;
+
+                                    }
+
+                                    a.cart-btn {
+                                        left: 54%;
+                                    }
+                                }
+
+                                .product-info {
+                                    margin  : 19px 0 0;
+                                    position: relative;
+
+                                    h6.product-name {
+                                        margin: 0 0 15px;
+
+                                        a {
+                                            color          : $color-text-gray-63;
+                                            font-weight    : 500;
+                                            text-transform : none;
+                                            text-decoration: none;
+
+
+                                        }
+                                    }
+
+                                    .single-product-review,
+                                    .cart-btn-container,
+                                    .product-price {
+                                        margin-bottom: 15px;
+                                        line-height  : 18px;
+                                    }
+
+                                    .product-price {
+                                        color: $color-green;
+
+                                        span {
+                                            font-size  : 22px;
+                                            font-weight: 700;
+                                        }
+                                    }
+
+                                    .product-short-desc,
+                                    .description,
+                                    .actions {
+                                        display: none;
+                                    }
+                                }
+
+                                &:hover {
+
+                                    .product-img {
+                                        transition: border .2s ease;
+
+                                        .product-overlay {
+                                            opacity   : 1;
+                                            visibility: visible;
+                                        }
+
+                                        a.quick-view {
+                                            top       : calc(50% - 20px);
+                                            opacity   : 1;
+                                            visibility: visible;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.list-view {
+                                .single-product {
+                                    display: flex;
+
+                                    .product-img {
+                                        width: 33.33333%;
+
+                                        .product-overlay {
+                                            display: none;
+                                        }
+
+                                        .quick-view {
+                                            display: none;
+                                        }
+                                    }
+
+                                    .product-info {
+                                        flex      : 1;
+                                        margin    : 19px 0 0;
+                                        position  : relative;
+                                        text-align: left;
+                                        padding   : 0 15px;
+
+                                        h6.product-name {
+                                            font-size: 20px;
+
+                                            a {
+                                                color         : #333;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+
+                                        .product-short-desc,
+                                        .description,
+                                        .actions {
+                                            display: block;
+                                        }
+
+                                        .product-info .rating-box {
+                                            margin  : 0 0 20px;
+                                            padding : 0 0 20px;
+                                            position: relative;
+                                        }
+
+                                        .product-price {
+                                            margin: 20px 0 0;
+                                            color : $color-green;
+
+                                            .special-price {
+                                                span {
+                                                    font-size  : 25px;
+                                                    font-weight: 700;
+                                                }
+                                            }
+                                        }
+
+                                        .product-short-desc {
+                                            margin     : 16px 0 0;
+                                            line-height: 22px;
+                                        }
+
+                                        .description {
+                                            font-family: 'Raleway', sans-serif;
+                                            font-size  : 14px;
+                                            line-height: 25px;
+                                            margin     : 0 0 15px;
+                                        }
+
+                                        .actions {
+                                            margin: 20px 0 0;
+
+                                            a.cart-btn,
+                                            a.quick-view-btn,
+                                            .shop-wishlist-button {
+                                                border-radius  : 0;
+                                                font-size      : 12px;
+                                                padding        : 8px 16px;
+                                                text-transform : uppercase;
+                                                border         : 1px solid #ddd;
+                                                color          : #333;
+                                                display        : inline-block;
+                                                margin-right   : 7px;
+                                                text-decoration: none;
+                                                transition     : .2 all linear;
+
+                                                i {
+                                                    color: $color-text-gray-3;
+                                                }
+
+                                                &:hover {
+                                                    color           : white;
+                                                    background-color: $color-green;
+
+                                                    i {
+                                                        color: white;
+                                                    }
+
+                                                    a {
+                                                        color: white;
+                                                    }
+                                                }
+                                            }
+
+                                            a.cart-btn {
+                                                transition: .2s all ease-in .1s;
+                                            }
+                                        }
+                                    }
+
+                                    &:hover {
+                                        .product-img {
+                                            border: 1px solid rgba($color: $color-text-gray-9, $alpha: .2);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .row.pagination {
+                padding: 5px 0;
+                border : 1px solid rgba($color: $color-text-gray-9, $alpha: .4);
+                .pagination-area {
+                    margin-top: 0;
+
+                    .pagination-links {
+                        float : right;
+                        margin: 2px 0 0;
+
+                        ul {
+                            list-style: outside none none;
+                            margin    : 0;
+                            padding   : 0;
+
+                            li {
+                                margin-bottom: 0;
+
+                                span.page {
+                                    a {
+                                        color          : #333;
+                                        font-size      : 13px;
+                                        text-decoration: none;
+                                        padding        : 0 0 0 7px;
+                                        transition     : .2s all ease-in;
+                                    }
+
+                                    &.current {
+                                        color    : $color-green;
+                                        font-size: 13px;
+                                    }
+
+
+                                }
+
+                                span.next {
+                                    a {
+                                        text-decoration: none;
+                                        color          : $color-text-gray-3;
+                                        transition     : .2s all ease-in;
+                                    }
+
+                                    &:before {
+                                        content       : "next";
+                                        font-family   : Raleway, sans-serif;
+                                        font-size     : 13px;
+                                        margin-right  : 10px;
+                                        text-transform: uppercase;
+
+                                    }
+
+                                    transition: .2s all ease-in;
+                                }
+
+                                span {
+                                    &:hover {
+                                        color: $color-green;
+
+                                        i,
+                                        a {
+                                            color: $color-green;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .pull-left {
+            order: 0;
+
+            .sidebar-widget-area {
+                form#myform {
+                    margin-bottom: 0;
+
+                    .single-sidebar-widget {
+                        margin       : 0 0 26px;
+                        padding-right: 20px;
+
+                        h6.widget-title {
+                            font-weight   : 700;
+                            text-transform: uppercase;
+                            line-height   : 10px;
+                            color         : $color-green;
+
+                            margin-bottom: 20px;
+
+                        }
+
+                        .menu-list {
+
+                            ul {
+                                li {
+                                    color        : #333;
+                                    display      : block;
+                                    font-family  : Raleway, sans-serif;
+                                    font-size    : 14px;
+                                    cursor       : pointer;
+                                    padding      : 5px 0;
+                                    margin-bottom: 0;
+
+                                    input {
+                                        margin: 0 5px 0 0;
+                                        height: auto;
+                                        width : auto;
+                                    }
+
+                                    label {
+                                        cursor     : pointer;
+                                        color      : #333;
+                                        margin     : 0;
+                                        font-weight: 400;
+                                        display    : inline-block;
+                                        max-width  : 100%;
+                                    }
+                                }
+                            }
+
+                            .sidebar-list-style {
+                                .sidebar-price-filter {
+                                    display        : flex;
+                                    justify-content: space-between;
+
+                                    input {
+                                        width      : 70px;
+                                        padding    : 10px 5px;
+                                        background : transparent;
+                                        border     : 1px solid #e5e5e5;
+                                        line-height: normal;
+                                    }
+                                }
+
+                                .theme-default-button {
+                                    background-color: #000;
+                                    border          : medium none;
+                                    color           : #fff;
+                                    cursor          : pointer;
+                                    display         : inline-block;
+                                    font-size       : 14px;
+                                    font-weight     : 400;
+                                    height          : 40px;
+                                    line-height     : 24px;
+                                    margin-bottom   : 0;
+                                    padding         : 8px 25px;
+                                    border-radius   : 0;
+                                    text-align      : center;
+                                    margin          : 20px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    @media screen and (max-width: 641px) {}
+
+    @media only screen and (min-width:641px) and (max-width: 767px) {}
+
+    @media only screen and (max-width: 991px) {
+        main#main-content {
+            .breadcrumbs-section {
+                .breadcrumbs {
+                    .breadcrumbs-inner {
+                        color         : $color-text-gray-6;
+                        text-transform: capitalize;
+
+                        color: $color-text-gray-6;
+
+
+
+                        nav {
+                            display: block;
+
+                            ul {
+                                li {
+                                    display      : inline-block;
+                                    margin-right : 12px;
+                                    position     : relative;
+                                    margin-bottom: 0;
+
+                                    a {
+                                        color          : $color-text-gray-6;
+                                        transition     : all .3s ease 0s;
+                                        text-decoration: none;
+                                    }
+
+                                    span {
+                                        color: $color-text-gray-9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #shop {
+                .pull-right {
+                    order: 0;
+
+                }
+
+                .pull-left {
+                    order: 1;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {}
+
+@media screen and (max-width: 1200px) {}

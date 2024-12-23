@@ -175,6 +175,17 @@ html {
               display   : inline-block;
               cursor    : pointer;
 
+              button {
+                a {
+                  text-decoration: none;
+                  color: $color-text-gray-6;
+                  transition: .2s linear;
+                  &:hover{
+                    color: $color-green;
+                  }
+                }
+              }
+
               .dropbtn {
                 border        : none;
                 width         : 100%;

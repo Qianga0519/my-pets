@@ -148,6 +148,14 @@ html {
   display: inline-block;
   cursor: pointer;
 }
+.shopify-section-header .header-bottom .container .row .mid-header nav .nav-item button a {
+  text-decoration: none;
+  color: #666;
+  transition: 0.2s linear;
+}
+.shopify-section-header .header-bottom .container .row .mid-header nav .nav-item button a:hover {
+  color: #54cd38;
+}
 .shopify-section-header .header-bottom .container .row .mid-header nav .nav-item .dropbtn {
   border: none;
   width: 100%;

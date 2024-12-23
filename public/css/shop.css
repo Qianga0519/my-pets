@@ -1,0 +1,504 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+.ptb-100 {
+  padding: 100px 0;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+body ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+main#main-content .breadcrumbs-section {
+  background: #f8f8f8;
+}
+main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner {
+  color: #666;
+  text-transform: capitalize;
+  color: #666;
+}
+main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav {
+  display: block;
+}
+main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li {
+  display: inline-block;
+  margin-right: 12px;
+  position: relative;
+  margin-bottom: 0;
+}
+main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li a {
+  color: #666;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li span {
+  color: #999;
+}
+main#main-content #shop .pull-right {
+  order: 1;
+  margin: 48px 0 0;
+  float: right !important;
+}
+main#main-content #shop .pull-right .toolbar {
+  background: red;
+}
+main#main-content #shop .pull-right .toolbar .view-mode span.view-style {
+  margin-right: 10px;
+}
+main#main-content #shop .pull-right .toolbar .view-mode span {
+  font-family: "Raleway", sans-serif;
+  float: left;
+}
+main#main-content #shop .pull-right .toolbar .view-mode span .fallback-text {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+main#main-content #shop .pull-right .toolbar .view-mode .change-view {
+  border-right: 1px solid #e8e8e8;
+  color: #aaa;
+  display: block;
+  float: left;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 3px;
+  padding: 0 10px !important;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: none;
+  border: 0 none;
+}
+main#main-content #shop .pull-right .toolbar .view-mode .change-view--active {
+  cursor: default;
+  color: #54cd38;
+}
+main#main-content #shop .pull-right .toolbar .form-horizontal .sorter {
+  margin-left: 25px;
+  float: right;
+  position: relative;
+  overflow: hidden;
+}
+main#main-content #shop .pull-right .toolbar .form-horizontal .sorter select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+  text-transform: none;
+  background: #fbfbfb none repeat scroll 0 0;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  width: 165px;
+  height: 28px;
+  line-height: 26px;
+  padding: 0 0 0 15px !important;
+  border-top: none;
+}
+main#main-content #shop .pull-right .toolbar .form-horizontal .sorter::after {
+  content: "\f107";
+  font-family: "FontAwesome";
+  position: absolute;
+  background: #f1f1f1 none repeat scroll 0px 0px;
+  border: 1px solid #DDD;
+  border-radius: 0;
+  color: #777;
+  width: 34px;
+  height: 28px;
+  line-height: 28px;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  text-align: center;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product {
+  padding: 40px 0 0;
+  text-align: center;
+  width: 100%;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item {
+  overflow: hidden;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product {
+  margin: 0 0 38px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img {
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a {
+  display: block;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img .product-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 999;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.quick-view {
+  background-color: white;
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  top: calc(50% + 30px);
+  transition: all 0.7s ease 0s;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.quick-view:hover {
+  background-color: #54cd38;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.quick-view:hover i {
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.quick-view i {
+  font-size: 20px;
+  color: #54cd38;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.modal-view {
+  right: 54%;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-img a.cart-btn {
+  left: 54%;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info {
+  margin: 19px 0 0;
+  position: relative;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info h6.product-name {
+  margin: 0 0 15px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info h6.product-name a {
+  color: #636363;
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .single-product-review,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .cart-btn-container,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .product-price {
+  margin-bottom: 15px;
+  line-height: 18px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .product-price {
+  color: #54cd38;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .product-price span {
+  font-size: 22px;
+  font-weight: 700;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .product-short-desc,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .description,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product .product-info .actions {
+  display: none;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product:hover .product-img {
+  transition: border 0.2s ease;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product:hover .product-img .product-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item .single-product:hover .product-img a.quick-view {
+  top: calc(50% - 20px);
+  opacity: 1;
+  visibility: visible;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product {
+  display: flex;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-img {
+  width: 33.33333%;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-img .product-overlay {
+  display: none;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-img .quick-view {
+  display: none;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info {
+  flex: 1;
+  margin: 19px 0 0;
+  position: relative;
+  text-align: left;
+  padding: 0 15px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info h6.product-name {
+  font-size: 20px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info h6.product-name a {
+  color: #333;
+  text-transform: uppercase;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .product-short-desc,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .description,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions {
+  display: block;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .product-info .rating-box {
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  position: relative;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .product-price {
+  margin: 20px 0 0;
+  color: #54cd38;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .product-price .special-price span {
+  font-size: 25px;
+  font-weight: 700;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .product-short-desc {
+  margin: 16px 0 0;
+  line-height: 22px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .description {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 0 15px;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions {
+  margin: 20px 0 0;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.quick-view-btn,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions .shop-wishlist-button {
+  border-radius: 0;
+  font-size: 12px;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 1px solid #ddd;
+  color: #333;
+  display: inline-block;
+  margin-right: 7px;
+  text-decoration: none;
+  transition: 0.2 all linear;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn i,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.quick-view-btn i,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions .shop-wishlist-button i {
+  color: #333;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn:hover,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.quick-view-btn:hover,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions .shop-wishlist-button:hover {
+  color: white;
+  background-color: #54cd38;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn:hover i,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.quick-view-btn:hover i,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions .shop-wishlist-button:hover i {
+  color: white;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn:hover a,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.quick-view-btn:hover a,
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions .shop-wishlist-button:hover a {
+  color: white;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product .product-info .actions a.cart-btn {
+  transition: 0.2s all ease-in 0.1s;
+}
+main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product .grid-item.list-view .single-product:hover .product-img {
+  border: 1px solid rgba(153, 153, 153, 0.2);
+}
+main#main-content #shop .pull-right .row.pagination {
+  padding: 5px 0;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area {
+  margin-top: 0;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links {
+  float: right;
+  margin: 2px 0 0;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li {
+  margin-bottom: 0;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span.page a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 0 0 0 7px;
+  transition: 0.2s all ease-in;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span.page.current {
+  color: #54cd38;
+  font-size: 13px;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span.next {
+  transition: 0.2s all ease-in;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span.next a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.2s all ease-in;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span.next:before {
+  content: "next";
+  font-family: Raleway, sans-serif;
+  font-size: 13px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span:hover {
+  color: #54cd38;
+}
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span:hover i,
+main#main-content #shop .pull-right .row.pagination .pagination-area .pagination-links ul li span:hover a {
+  color: #54cd38;
+}
+main#main-content #shop .pull-left {
+  order: 0;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform {
+  margin-bottom: 0;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget {
+  margin: 0 0 26px;
+  padding-right: 20px;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget h6.widget-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 10px;
+  color: #54cd38;
+  margin-bottom: 20px;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list ul li {
+  color: #333;
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list ul li input {
+  margin: 0 5px 0 0;
+  height: auto;
+  width: auto;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list ul li label {
+  cursor: pointer;
+  color: #333;
+  margin: 0;
+  font-weight: 400;
+  display: inline-block;
+  max-width: 100%;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list .sidebar-list-style .sidebar-price-filter {
+  display: flex;
+  justify-content: space-between;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list .sidebar-list-style .sidebar-price-filter input {
+  width: 70px;
+  padding: 10px 5px;
+  background: transparent;
+  border: 1px solid #e5e5e5;
+  line-height: normal;
+}
+main#main-content #shop .pull-left .sidebar-widget-area form#myform .single-sidebar-widget .menu-list .sidebar-list-style .theme-default-button {
+  background-color: #000;
+  border: medium none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 24px;
+  margin-bottom: 0;
+  padding: 8px 25px;
+  border-radius: 0;
+  text-align: center;
+  margin: 20px 0 0;
+}
+@media only screen and (max-width: 991px) {
+  main#main-content main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner {
+    color: #666;
+    text-transform: capitalize;
+    color: #666;
+  }
+  main#main-content main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav {
+    display: block;
+  }
+  main#main-content main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li {
+    display: inline-block;
+    margin-right: 12px;
+    position: relative;
+    margin-bottom: 0;
+  }
+  main#main-content main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li a {
+    color: #666;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  main#main-content main#main-content .breadcrumbs-section .breadcrumbs .breadcrumbs-inner nav ul li span {
+    color: #999;
+  }
+  main#main-content main#main-content #shop .pull-right {
+    order: 0;
+  }
+  main#main-content main#main-content #shop .pull-left {
+    order: 1;
+  }
+}
+
+/*# sourceMappingURL=shop.css.map */
