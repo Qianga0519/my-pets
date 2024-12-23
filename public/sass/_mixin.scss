@@ -1,0 +1,13 @@
+@mixin flyin($start-y, $end-y, $name: flyin) {
+    @keyframes #{$name} {
+      0% {
+        transform: translateY(#{$start-y});
+      }
+      100% {
+        transform: translateY(#{$end-y});
+      }
+    }
+  }
+@mixin hover-btn-green(){
+  
+}
