@@ -1,0 +1,184 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+main#main-content {
+    .breadcrumbs-section {
+        background: #f8f8f8;
+
+        .breadcrumbs {
+            .breadcrumbs-inner {
+                color         : $color-text-gray-6;
+                text-transform: capitalize;
+                color         : $color-text-gray-6;
+
+                nav {
+                    display: block;
+
+                    ul {
+                        li {
+                            display      : inline-block;
+                            margin-right : 12px;
+                            position     : relative;
+                            margin-bottom: 0;
+
+                            a {
+                                color          : $color-text-gray-6;
+                                transition     : all .3s ease 0s;
+                                text-decoration: none;
+                            }
+
+                            span {
+                                color: $color-text-gray-9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #services {
+        .grid-services {
+            .grid-item {
+                .blog-post-single-item {
+                    border-top   : 0px solid #e5e5e5;
+                    border-right : 0px solid #e5e5e5;
+                    border-left  : 0px solid #e5e5e5;
+                    border-bottom: 1px solid rgba($color-text-gray-9, .3);
+                    padding      : 30px 0;
+
+                    .single-item-img {
+                        a {
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                    }
+
+                    .single-item-content {
+                        overflow: hidden;
+                        padding : 0 15px 0 30px;
+
+                        h2 {
+                            a {
+                                color          : #222;
+                                font-family    : Montserrat;
+                                font-size      : 16px;
+                                margin-top     : 0;
+                                display        : block;
+                                line-height    : 22px;
+                                text-decoration: none;
+                                font-weight: 500;
+                            }
+                        }
+
+                        h4 {
+                            font-size  : 13px;
+                            font-style : italic;
+                            font-weight: 500;
+                            float      : left;
+                            margin     : 0;
+                            padding    : 5px 0 15px;
+                        }
+
+                        p {
+                            font-size  : 14px;
+                            color      : #6f6f6f;
+                            display    : block;
+                            overflow   : hidden;
+                            width      : 100%;
+                            line-height: 23px;
+                        }
+
+                        .blog-action {
+                            a {
+                                border-radius  : 30px;
+                                display        : inline-block;
+                                font-size      : 12px;
+                                margin         : 14px 0 0;
+                                padding        : 8px 16px;
+                                text-transform : uppercase;
+                                border         : 1px solid $color-green;
+                                text-decoration: none;
+                                color          : $color-green;
+                                transition     : all .3s ease-in;
+
+                                &:hover {
+                                    color           : $color-text-white;
+                                    background-color: $color-green;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width:767px) {}
+
+    @media screen and (max-width: 641px) {}
+
+    @media only screen and (min-width:641px) and (max-width: 767px) {}
+
+    @media only screen and (max-width: 991px) {
+        main#main-content {
+            .breadcrumbs-section {
+                .breadcrumbs {
+                    .breadcrumbs-inner {
+                        color         : $color-text-gray-6;
+                        text-transform: capitalize;
+
+                        color: $color-text-gray-6;
+
+
+
+                        nav {
+                            display: block;
+
+                            ul {
+                                li {
+                                    display      : inline-block;
+                                    margin-right : 12px;
+                                    position     : relative;
+                                    margin-bottom: 0;
+
+                                    a {
+                                        color          : $color-text-gray-6;
+                                        transition     : all .3s ease 0s;
+                                        text-decoration: none;
+                                    }
+
+                                    span {
+                                        color: $color-text-gray-9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            #shop {
+                .pull-right {
+                    order: 0;
+
+                }
+
+                .pull-left {
+                    order: 1;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {}
+
+@media screen and (max-width: 1200px) {}

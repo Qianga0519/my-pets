@@ -20,3 +20,36 @@ function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+const tableProduct = document.querySelector('.table-product')
+const listProudctView = tableProduct.querySelectorAll('.grid-item');
+const viewMode = document.querySelector('.view-mode')
+var viewModePoduct = 'grid'
+viewMode.addEventListener('click', (e) => {
+    let mode = e.target.dataset.view;
+    console.log(mode)
+    if (mode == 'grid') {
+        viewMode.querySelector('.change-grid').classList.add('change-view--active')
+        viewMode.querySelector('.change-list').classList.remove('change-view--active')
+
+        viewGrid();
+        return
+    }
+    viewMode.querySelector('.change-grid').classList.remove('change-view--active')
+    viewMode.querySelector('.change-list').classList.add('change-view--active')
+    viewList();
+});
+
+function viewList() {
+    listProudctView.forEach(element => {
+        element.classList.remove('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
+        element.classList.add('list-view', 'col-12');
+    });
+}
+
+function viewGrid() {
+    listProudctView.forEach(element => {
+        element.classList.add('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
+        element.classList.remove('list-view', 'col-12');
+    });
+
+}

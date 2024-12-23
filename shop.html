@@ -96,7 +96,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
-                                <button class="dropbtn"><a href="">services</a></button>
+                                <button class="dropbtn"><a href="services.html">services</a></button>
                                 <div class="dropdown-content">
                                     <a href="">Full Grooming</a>
                                     <a href="">Bath and Dry</a>
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
-                                <button class="dropbtn"> <a href="">pages</a></button>
+                                <button class="dropbtn"> <a href="#">pages</a></button>
                                 <div class="dropdown-content">
                                     <a href="#">Blog</a>
                                     <a href="#">About Us</a>
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
-                                <button class="dropbtn"> <a href="">product</a></button>
+                                <button class="dropbtn"> <a href="product.html">product</a></button>
                                 <div class="dropdown-content">
                                     <a href="#">Simple Product</a>
                                     <a href="#"> Variable Product</a>
@@ -121,7 +121,7 @@
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
-                                <button class="dropbtn"> <a href="">contact</a></button>
+                                <button class="dropbtn"> <a href="contact.html">contact</a></button>
                                 <!-- <div class="dropdown-content">
                                 </div> -->
                             </div>
@@ -907,41 +907,6 @@
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/main.js"></script>
-    <script>
-        const tableProduct = document.querySelector('.table-product')
-        const listProudctView = tableProduct.querySelectorAll('.grid-item');
-        const viewMode = document.querySelector('.view-mode')
-        var viewModePoduct = 'grid'
-        viewMode.addEventListener('click', (e) => {
-            let mode = e.target.dataset.view;
-            console.log(mode)
-            if (mode == 'grid') {
-                viewMode.querySelector('.change-grid').classList.add('change-view--active')
-                viewMode.querySelector('.change-list').classList.remove('change-view--active')
-
-                viewGrid();
-                return
-            }
-            viewMode.querySelector('.change-grid').classList.remove('change-view--active')
-            viewMode.querySelector('.change-list').classList.add('change-view--active')
-            viewList();
-        });
-
-        function viewList() {
-            listProudctView.forEach(element => {
-                element.classList.remove('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
-                element.classList.add('list-view', 'col-12');
-            });
-        }
-
-        function viewGrid() {
-            listProudctView.forEach(element => {
-                element.classList.add('col-lg-4', 'col-md-6', 'col-sm-6', 'col-xs-6');
-                element.classList.remove('list-view', 'col-12');
-            });
-
-        }
-    </script>
 </body>
 
 </html>
