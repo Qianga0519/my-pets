@@ -1,0 +1,231 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+
+main#main-content {
+    #about-us {
+
+
+        .about-us-left {
+            order: 1;
+
+            img {
+
+                width: 100%;
+            }
+        }
+
+        .about-us-right {
+
+            h1 {
+                font-weight   : bold;
+                color         : $color-green;
+                text-transform: uppercase;
+            }
+
+            h6 {
+                text-transform: uppercase;
+                color         : $color-text-gray-6;
+                font-weight   : 300;
+                margin        : 0 0 20px;
+
+            }
+
+            p {
+                margin     : 30px 0 15px;
+                font-family: 'Raleway', 'sans-serif';
+                color      : $color-text-gray-6;
+                line-height: 30px;
+                font-weight: 400;
+            }
+
+            a {
+                text-transform : uppercase;
+                border         : none;
+                border-radius  : 0;
+                background     : $color-green none repeat scroll 0% 0%;
+                color          : #fff;
+                width          : 115px;
+                text-align     : center;
+                position       : relative;
+                overflow       : hidden;
+                font-size      : 12px;
+                margin         : 14px 0 0;
+                padding        : 10px 16px;
+                display        : inline-block;
+                text-decoration: none;
+
+                span {
+                    z-index : 99;
+                    position: relative;
+                }
+
+                &::before {
+                    content   : "";
+                    position  : absolute;
+                    background: #8c8c8c4d;
+                    width     : 0%;
+                    left      : 0;
+                    top       : 0;
+                    height    : 100%;
+                    transition: all .5s ease;
+                    z-index   : 9;
+                }
+
+                &:hover {
+                    &::before {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #our-team {
+        .title-our-team {
+            margin-top    : 95px;
+            font-weight   : 700;
+            text-transform: uppercase;
+            text-align    : center;
+            position      : relative;
+
+            padding-bottom: 15px;
+
+            &::before {
+                content   : '';
+                display   : block;
+                width     : 40px;
+                height    : 1px;
+                top       : calc(100% - 1px);
+                left      : 50%;
+                transform : translateX(-20px);
+                position  : absolute;
+                background: $color-text-gray-9;
+            }
+        }
+
+        .team-members-area {
+            .single-team-member {
+                .member-img {
+                    position: relative;
+
+                    a {
+                        width: 100%;
+
+                        img {
+                            width : 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .member-social-links {
+                        position : absolute;
+                        top      : calc(50%);
+                        left     : 50%;
+                        transform: translateX(-50%) translateY(-50%);
+
+
+                        ul {
+                            display: flex;
+                            gap    : 10px;
+
+                            li {
+                                visibility: hidden;
+                                opacity   : 0;
+                                transition: all .3s ease 0s;
+                                transform : translateY(15px);
+
+                                &:nth-child(1) {
+                                    transition-delay: 0.1s;
+                                }
+
+                                &:nth-child(2) {
+                                    transition-delay: 0.2s;
+                                }
+
+                                &:nth-child(3) {
+                                    transition-delay: 0.3s;
+                                }
+
+                                &:nth-child(4) {
+                                    transition-delay: 0.4s;
+                                }
+
+                                i {
+                                    font-size : 20px;
+                                    color     : $color-text-white;
+                                    transition: all .2s ease;
+
+                                    &:hover {
+
+                                        color: $color-green;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+                .member-info {
+                    text-align: center;
+
+                    h6.member-name {
+                        color         : $color-5;
+                        font-weight   : 700;
+                        margin        : 21px 0 0;
+                        text-transform: uppercase;
+                    }
+
+                    p.member-designation {
+                        color         : $color-green;
+                        font-weight   : 500;
+                        margin        : 3px 0 0;
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        font-family: 'Raleway', sans-serif;
+                        font-size  : 14px;
+                        line-height: 25px;
+                        margin     : 0 0 15px;
+                    }
+                } &:hover {
+                .member-img {
+                    .member-social-links {
+                        ul {
+                            li {
+
+                              
+                                    transform : translateY(-15px);
+                                    visibility: visible;
+                                    opacity   : 1;
+                               
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+            }
+
+           
+        }
+    }
+
+}

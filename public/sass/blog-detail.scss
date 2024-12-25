@@ -1,0 +1,455 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+
+main#main-content {
+    #blog-detail {
+        .pull-right {
+            order: 1;
+
+            .blog-detail-post-wrapper {
+                .post-thumbnail {
+                    padding-right: 0;
+                    width        : 100%;
+
+                    img {
+                        width : 100%;
+                        height: auto;
+                    }
+                }
+
+                .post-information {
+                    width: 100%;
+
+                    h2 {
+                        color         : #333;
+                        text-transform: uppercase;
+                        margin        : 20px 0;
+                    }
+
+                    .entry-meta {
+                        border : 1px solid #e5e5e5;
+                        color  : $color-4;
+                        float  : left;
+                        margin : 0 0 20px;
+                        padding: 10px 15px 10px 0;
+                        width  : 100%;
+
+                        span,
+                        ul {
+                            float: left;
+
+
+                            i {
+                                margin: 0 5px 0 15px;
+                            }
+
+
+                            a {
+                                color          : $color-4;
+                                text-decoration: none;
+                                text-transform : uppercase;
+
+                                &:hover {
+                                    color: $color-green;
+                                }
+                            }
+
+                            .fa {
+                                display                : inline-block;
+                                font                   : normal normal normal 14px / 1 FontAwesome;
+                                font-size              : inherit;
+                                text-rendering         : auto;
+                                -webkit-font-smoothing : antialiased;
+                                -moz-osx-font-smoothing: grayscale;
+                            }
+
+                            ul {
+                                list-style: outside none none;
+                                margin    : 0;
+                                padding   : 0;
+
+                                li {
+                                    display: inline-block;
+
+                                    a {
+                                        color          : $color-4;
+                                        text-transform : uppercase;
+                                        text-decoration: none;
+
+                                        &:hover {
+                                            color: $color-green;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        span {
+                            &:hover {
+                                color: $color-green;
+
+                                i {
+                                    color: $color-4;
+                                }
+                            }
+                        }
+
+                    }
+
+                    .entry-content {
+                        p {
+                            font-family  : 'Raleway', sans-serif;
+                            font-size    : 14px;
+                            line-height  : 25px;
+                            margin       : 0 0 15px;
+                            margin-bottom: 25px;
+                        }
+
+                        blockquote {
+                            border-left: 5px solid #54cd38;
+                            background : #ededed none repeat scroll 0 0;
+                            font-size  : 14px;
+                            font-style : italic;
+                            margin     : 20px 40px;
+                            padding    : 20px;
+                        }
+
+
+                    }
+
+                    .social-sharing {
+                        border : 1px solid #e8e8e9;
+                        float  : left;
+                        margin : 0;
+                        padding: 10px;
+                        width  : 100%;
+
+                        h3 {
+                            background    : #0000 none repeat scroll 0 0;
+                            color         : #444;
+                            float         : left;
+                            font-size     : 16px;
+                            font-weight   : 700;
+                            line-height   : 34px;
+                            margin        : 0 20px 0 0;
+                            text-transform: uppercase;
+                            width         : auto;
+                        }
+
+                        .sharing-icon {
+                            float        : right;
+                            margin-bottom: -3px;
+                        }
+                    }
+                }
+            }
+
+            .single-post-comments {
+                margin-bottom: 0;
+
+                margin-bottom: 0;
+
+                .comments-area {}
+
+                .comment-respond {
+                    margin-top: 60px;
+                    max-width : 650px;
+
+                    h3.comment-reply-title {
+                        border-bottom : 1px solid #e8e8e9;
+                        font-size     : 18px;
+                        margin        : 0 0 20px;
+                        padding       : 0 0 5px;
+                        text-transform: uppercase;
+
+                    }
+
+                    label {
+                        display       : block;
+                        font-size     : 13px;
+                        font-weight   : 700;
+                        margin        : 0 0 11px;
+                        text-transform: uppercase;
+                    }
+
+                    span.email-notes {
+                        color        : #333;
+                        display      : block;
+                        font-family  : Raleway, sans-serif;
+                        font-size    : 13px;
+                        margin-bottom: 20px;
+                    }
+
+                    form {
+                        margin-bottom: 0;
+
+                        input,
+                        textarea,
+                        select {
+                            border       : 1px solid #e5e5e5;
+                            max-width    : 100%;
+                            padding      : 8px 10px;
+                            border-radius: 3px;
+                            width        : 100%;
+
+                        }
+
+                        input {
+                            line-height: normal;
+                        }
+
+                        input[type=text],
+                        input[type=email] {
+                            border       : 1px solid #ddd;
+                            border-radius: 0;
+                            font-family  : Raleway, sans-serif;
+                            font-size    : 13px;
+                            height       : 40px;
+                            margin-bottom: 20px;
+                            padding      : 0 20px;
+                            width        : 100%;
+                        }
+                        input[type=submit] {
+                            background   : $color-green none repeat scroll 0px 0px;
+                            border       : 1px solid $color-green;
+                            color        : $color-f3;
+                            width        : unset;
+                            position     : relative;
+                            border-radius: 0;
+                            box-shadow   : none;
+
+                            display           : inline-block;
+                            font-size         : 12px;
+                            font-weight       : 700;
+                            height            : 40px;
+                            margin-top        : 20px;
+                            padding           : 0 20px;
+                            text-shadow       : none;
+                            text-transform    : uppercase;
+                            -webkit-transition: all .3s ease 0s;
+                            transition        : all .3s ease 0s;
+                            white-space       : nowrap;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pull-left {
+            .sidebar-widget-area {
+                .sidebar-widget {
+                    .single-sidebar {
+                        margin       : 0 0 26px;
+                        padding-right: 20px;
+
+                        h6.widget-title {
+                            border-bottom : 1px solid #f4f4f4;
+                            padding       : 0 0 10px;
+                            line-height   : 14px;
+                            color         : $color-green;
+                            font-weight   : 700;
+                            text-transform: uppercase;
+                            padding-top   : 0;
+                            font-size     : 16px;
+                        }
+
+                        .search-form {
+                            margin-top: 17px;
+
+                            form {
+                                margin-bottom: 0;
+
+                                .form-input {
+
+
+                                    background: red;
+                                    padding   : 10px;
+                                    display   : flex;
+
+                                    justify-content: center;
+                                    align-items    : center;
+                                    background     : $color-f3 none repeat scroll 0 0;
+
+                                    input {
+                                        background : $color-f3 none repeat scroll 0 0;
+                                        font-family: 'Raleway', sans-serif;
+                                        font-size  : 13px;
+                                        height     : 20px;
+                                        width      : 85%;
+                                        border     : none;
+                                        box-shadow : none;
+                                        outline    : none;
+
+                                        &::-webkit-search-cancel-button {
+                                            display: none;
+                                        }
+
+
+
+                                    }
+
+
+
+                                    button {
+                                        background    : $color-f3 none repeat scroll 0 0;
+                                        color         : inherit;
+                                        font          : inherit;
+                                        margin        : 0;
+                                        text-align    : center;
+                                        top           : 27%;
+                                        font-size     : 20px;
+                                        right         : 10px;
+                                        line-height   : 1px;
+                                        text-transform: none;
+                                        overflow      : visible;
+                                        width         : 15%;
+                                        border        : none;
+
+                                        i {
+                                            font-size: 14px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .menu-list.recent-posts {
+                            ul {
+                                list-style: outside none none;
+                                margin    : 0;
+                                padding   : 0;
+
+                                li {
+                                    width: 100%;
+
+                                    border-bottom: none;
+
+                                    padding: 17px 0 0;
+
+                                    .post-wrapper {
+                                        display: flex;
+
+                                        overflow: hidden;
+
+                                        .post-thumb {
+                                            width: 30%;
+
+
+                                            a {
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        .post-info {
+                                            padding-left: 10px;
+                                            text-align  : left;
+                                            float       : left;
+                                            flex        : 1;
+
+                                            .post-title.recent-post-s {
+                                                font-size  : 13px;
+                                                font-weight: 400;
+                                                margin     : 0 0 5px;
+                                                padding    : 0;
+                                                line-height: 20px;
+
+                                                a {
+                                                    text-decoration: none;
+                                                    color          : $color-text-gray-3;
+                                                    font-family    : 'Montserrat', sans-serif;
+                                                    font-size      : 13px;
+                                                    text-transform : capitalize;
+                                                    transition     : .2s all ease-in;
+
+                                                    &:hover {
+                                                        color: $color-green;
+                                                    }
+                                                }
+
+                                            }
+
+                                            .post-date.recent-post-s {
+                                                color     : $color-7e;
+                                                font-size : 11px;
+                                                font-style: italic;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        ul.archive-sidebar {
+                            li {
+                                display      : block;
+                                padding      : 4px 0;
+                                margin-bottom: 0;
+
+                                a {
+                                    text-decoration: none;
+                                    display        : block;
+                                    font-size      : 13px;
+                                    color          : $color-text-gray-3;
+                                }
+                            }
+                        }
+
+                        .menu-list.tag-list {
+                            ul {
+                                list-style: outside none none;
+                                margin    : 0;
+                                padding   : 0;
+                                display   : flex;
+                                flex-wrap : wrap;
+
+                                li {
+                                    border-bottom: medium none;
+                                    margin-right : 4px;
+                                    padding      : 0 1px 10px;
+
+                                    a {
+                                        background     : #eee none repeat scroll 0 0;
+                                        border         : 1px solid #ddd;
+                                        color          : #333 !important;
+                                        display        : inline-block !important;
+                                        font-family    : 'Montserrat', sans-serif;
+                                        text-decoration: none;
+
+                                        padding: 5px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    main#main-content {
+
+        #blog {
+            .pull-right {
+                order: 0;
+            }
+
+
+        }
+    }
+}

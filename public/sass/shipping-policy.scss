@@ -1,0 +1,56 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+main#main-content {
+    h2 {
+        color         : $color-text-gray-3;
+        font-size     : 18px;
+        font-weight   : 700;
+        margin-bottom : 20px;
+        text-transform: capitalize;
+
+    }
+
+    p {
+        font-family: Raleway, sans-serif;
+
+
+        margin       : 0 0 15px;
+        margin-bottom: 15px;
+        color        : #333;
+        font-size    : 14px;
+        line-height  : 27px;
+    }
+
+    ul {
+        padding-left       : 15px;
+        margin-bottom      : 15px;
+        list-style         : unset;
+        list-style-position: inside;
+        margin             : 0;
+        padding            : 0;
+
+        li {
+            color      : #333;
+            font-size  : 14px;
+            line-height: 27px;
+
+            padding-left : 15px;
+            margin-bottom: 0;
+        }
+
+
+    }
+
+
+
+}

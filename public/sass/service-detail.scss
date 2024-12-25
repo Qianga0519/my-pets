@@ -39,13 +39,13 @@ main#main-content {
         }
     }
 
-    #blog {
+    #service-blog {
         .pull-right {
             order : 1;
  
             float : right !important;
 
-            .blog-post-wrapper {
+            .service-blog-post-wrapper{
                 border: medium none;
                 margin: 0;
 
@@ -124,8 +124,7 @@ main#main-content {
         }
 
         .pull-left {
-            order: 0;
-
+            order: 0; 
             .sidebar-widget-area {
                 .single-sidebar-widget {
                     margin       : 0 0 26px;

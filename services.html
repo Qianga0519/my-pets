@@ -17,6 +17,25 @@
 </head>
 
 <body>
+    <div id="preloader_active" style="display: block;">
+        <div id="close_loader" class="text-center">
+            <button class="btn btn-primary">CLOSE</button>
+        </div>
+        <script>
+            const btnCloseLoader = document.getElementById('close_loader');
+            btnCloseLoader.addEventListener('click', () => {
+                document.getElementById('preloader_active').style.display = 'none';
+            });
+        </script>
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
     <button id="btn-scroll-to-top" onclick="scrollToTop()"></button>
     <div class="top-notification-bar">
         <div class="container">
@@ -99,26 +118,26 @@
                             <div class="dropdown nav-item">
                                 <button class="dropbtn"><a href="services.html">services</a></button>
                                 <div class="dropdown-content">
-                                    <a href="">Full Grooming</a>
-                                    <a href="">Bath and Dry</a>
-                                    <a href="">Styling</a>
-                                    <a href="">Medical Bath</a>
+                                    <a href="service-detail.html">Full Grooming</a>
+                                    <a href="service-detail.html">Bath and Dry</a>
+                                    <a href="service-detail.html">Styling</a>
+                                    <a href="service-detail.html">Medical Bath</a>
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
                                 <button class="dropbtn"> <a href="#">pages</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Blog</a>
-                                    <a href="#">About Us</a>
-                                    <a href="#">Shipping Policy</a>
+                                    <a href="blog.html">Blog</a>
+                                    <a href="about-us.html">About Us</a>
+                                    <a href="shipping-policy.html">Shipping Policy</a>
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
                                 <button class="dropbtn"> <a href="product.html">product</a></button>
                                 <div class="dropdown-content">
-                                    <a href="#">Simple Product</a>
-                                    <a href="#"> Variable Product</a>
-                                    <a href="#"> Affiliate Link Product</a>
+                                    <a href="product-detail.html">Simple Product</a>
+                                    <a href="product-detail.html"> Variable Product</a>
+                                    <a href="product-detail.html"> Affiliate Link Product</a>
                                 </div>
                             </div>
                             <div class="dropdown nav-item">
@@ -133,9 +152,9 @@
                             <div class="dropdown menu-list-item">
                                 <button class="dropbtn"><i class="fa fa-user" aria-hidden="true"></i></button>
                                 <div class="dropdown-content">
-                                    <a href="/account">My account</a>
-                                    <a href="/pages/wishlist">Wishlist</a>
-                                    <a href="/checkout">Checkout</a>
+                                    <a href="login.html">My account</a>
+                                    <a href="wish-list.html">Wishlist</a>
+                                    <a href="check-out.html">Checkout</a>
                                 </div>
                             </div>
                             <div class="dropdown menu-list-item search-header">
@@ -149,7 +168,8 @@
                                 </form>
                             </div>
                             <div class="dropdown menu-list-item cart-header">
-                                <button class="dropbtn"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                                <button class="dropbtn"><a href="cart.html"><i class="fa fa-cart-plus"
+                                            aria-hidden="true"></i></a></button>
                                 <div class="dropdown-content">
                                     <div class="your-cart">
                                         <a href="" class="cart-item">
@@ -191,7 +211,7 @@
                                             <span class="lbl">Total:</span> <span class="shopping-cart__total"><span
                                                     class="money">$90.00 USD</span></span>
                                         </h6>
-                                        <a href="/checkout" class="checkout-btn">Check Out</a>
+                                        <a href="check-out.html" class="checkout-btn">Check Out</a>
                                     </div>
                                     <!-- <span class="not-item-cart">Your Cart is empty</span> -->
                                 </div>

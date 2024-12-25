@@ -1,0 +1,393 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+
+main#main-content {
+    #blog {
+        .pull-right {
+            order: 1;
+
+            .blog-content {
+
+                .grid-blog {
+
+
+                    .blog-post-single-item {
+                        border-top   : 0px solid #e5e5e5;
+                        border-right : 0px solid #e5e5e5;
+                        border-left  : 0px solid #e5e5e5;
+                        border-bottom: 1px solid rgba($color-text-gray-9, .3);
+                        padding      : 30px 0;
+
+                        .single-item-img {
+                            padding: 0;
+
+                            a {
+
+                                img {
+                                    width : 100%;
+                                    height: auto;
+                                }
+                            }
+
+                        }
+
+                        .single-item-content {
+                            overflow: hidden;
+                            padding : 0 0 0 30px;
+
+                            h2 {
+                                a {
+                                    color          : #222;
+                                    font-family    : Montserrat;
+                                    font-size      : 16px;
+                                    margin-top     : 0;
+                                    display        : block;
+                                    line-height    : 22px;
+                                    text-decoration: none;
+                                    font-weight    : 500;
+                                }
+                            }
+
+                            h4 {
+                                font-size  : 13px;
+                                font-style : italic;
+                                font-weight: 500;
+                                float      : left;
+                                margin     : 0;
+                                padding    : 5px 0 15px;
+                            }
+
+                            p {
+                                font-size  : 14px;
+                                color      : #6f6f6f;
+                                display    : block;
+                                overflow   : hidden;
+                                width      : 100%;
+                                line-height: 23px;
+                            }
+
+                            .blog-action {
+                                a {
+                                    display        : inline-block;
+                                    font-size      : 12px;
+                                    margin         : 14px 0 0;
+                                    padding        : 8px 16px;
+                                    text-transform : uppercase;
+                                    border         : 1px solid $color-green;
+                                    text-decoration: none;
+                                    color          : $color-green;
+                                    transition     : all .3s ease-in;
+
+                                    &:hover {
+                                        color           : $color-text-white;
+                                        background-color: $color-green;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:last-child {
+                            margin-bottom: 30px;
+                        }
+
+                        &:first-child {
+                            padding-top: 0;
+                        }
+                    }
+
+
+
+                }
+            }
+
+            .row.pagination {
+                padding: 5px 0;
+                border : 1px solid rgba($color: $color-text-gray-9, $alpha: .4);
+
+                .pagination-area {
+                    margin-top: 0;
+
+                    .pagination-links {
+                        float : right;
+                        margin: 2px 0 0;
+
+                        ul {
+                            list-style: outside none none;
+                            margin    : 0;
+                            padding   : 0;
+
+                            li {
+                                margin-bottom: 0;
+
+                                span.page {
+                                    a {
+                                        color          : #333;
+                                        font-size      : 13px;
+                                        text-decoration: none;
+                                        padding        : 0 0 0 7px;
+                                        transition     : .2s all ease-in;
+                                    }
+
+                                    &.current {
+                                        color    : $color-green;
+                                        font-size: 13px;
+                                    }
+
+
+                                }
+
+                                span.next {
+                                    a {
+                                        text-decoration: none;
+                                        color          : $color-text-gray-3;
+                                        transition     : .2s all ease-in;
+                                    }
+
+                                    &:before {
+                                        content       : "next";
+                                        font-family   : Raleway, sans-serif;
+                                        font-size     : 13px;
+                                        margin-right  : 10px;
+                                        text-transform: uppercase;
+
+                                    }
+
+                                    transition: .2s all ease-in;
+                                }
+
+                                span {
+                                    &:hover {
+                                        color: $color-green;
+
+                                        i,
+                                        a {
+                                            color: $color-green;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .pull-left {
+            .sidebar-widget-area {
+                .sidebar-widget {
+                    .single-sidebar {
+                        margin       : 0 0 26px;
+                        padding-right: 20px;
+
+                        h6.widget-title {
+                            border-bottom : 1px solid #f4f4f4;
+                            padding       : 0 0 10px;
+                            line-height   : 14px;
+                            color         : $color-green;
+                            font-weight   : 700;
+                            text-transform: uppercase;
+                            padding-top   : 0;
+                            font-size     : 16px;
+                        }
+
+                        .search-form {
+                            margin-top: 17px;
+
+                            form {
+                                margin-bottom: 0;
+
+                                .form-input {
+
+
+                                    background: red;
+                                    padding   : 10px;
+                                    display   : flex;
+
+                                    justify-content: center;
+                                    align-items    : center;
+                                    background     : $color-f3 none repeat scroll 0 0;
+
+                                    input {
+                                        background : $color-f3 none repeat scroll 0 0;
+                                        font-family: 'Raleway', sans-serif;
+                                        font-size  : 13px;
+                                        height     : 20px;
+                                        width      : 85%;
+                                        border     : none;
+                                        box-shadow : none;
+                                        outline    : none;
+
+                                        &::-webkit-search-cancel-button {
+                                            display: none;
+                                        }
+
+
+
+                                    }
+
+
+
+                                    button {
+                                        background    : $color-f3 none repeat scroll 0 0;
+                                        color         : inherit;
+                                        font          : inherit;
+                                        margin        : 0;
+                                        text-align    : center;
+                                        top           : 27%;
+                                        font-size     : 20px;
+                                        right         : 10px;
+                                        line-height   : 1px;
+                                        text-transform: none;
+                                        overflow      : visible;
+                                        width         : 15%;
+                                        border        : none;
+
+                                        i {
+                                            font-size: 14px;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        .menu-list.recent-posts {
+                            ul {
+                                list-style: outside none none;
+                                margin    : 0;
+                                padding   : 0;
+
+                                li {
+                                    width: 100%;
+
+                                    border-bottom: none;
+
+                                    padding: 17px 0 0;
+
+                                    .post-wrapper {
+                                        display: flex;
+
+                                        overflow: hidden;
+
+                                        .post-thumb {
+                                            width: 30%;
+
+
+                                            a {
+                                                img {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        .post-info {
+                                            padding-left: 10px;
+                                            text-align  : left;
+                                            float       : left;
+                                            flex        : 1;
+
+                                            .post-title.recent-post-s {
+                                                font-size  : 13px;
+                                                font-weight: 400;
+                                                margin     : 0 0 5px;
+                                                padding    : 0;
+                                                line-height: 20px;
+
+                                                a {
+                                                    text-decoration: none;
+                                                    color          : $color-text-gray-3;
+                                                    font-family    : 'Montserrat', sans-serif;
+                                                    font-size      : 13px;
+                                                    text-transform : capitalize;
+                                                    transition     : .2s all ease-in;
+
+                                                    &:hover {
+                                                        color: $color-green;
+                                                    }
+                                                }
+
+                                            }
+
+                                            .post-date.recent-post-s {
+                                                color     : $color-7e;
+                                                font-size : 11px;
+                                                font-style: italic;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+
+                        ul.archive-sidebar {
+                            li {
+                                display      : block;
+                                padding      : 4px 0;
+                                margin-bottom: 0;
+
+                                a {
+                                    text-decoration: none;
+                                    display        : block;
+                                    font-size      : 13px;
+                                    color          : $color-text-gray-3;
+                                }
+                            }
+                        }
+
+                        .menu-list.tag-list {
+                            ul {
+                                list-style: outside none none;
+                                margin    : 0;
+                                padding   : 0;
+                                display   : flex;
+                                flex-wrap : wrap;
+
+                                li {
+                                    border-bottom: medium none;
+                                    margin-right : 4px;
+                                    padding      : 0 1px 10px;
+
+                                    a {
+                                        background     : #eee none repeat scroll 0 0;
+                                        border         : 1px solid #ddd;
+                                        color          : #333 !important;
+                                        display        : inline-block !important;
+                                        font-family    : 'Montserrat', sans-serif;
+                                        text-decoration: none;
+
+                                        padding: 5px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    main#main-content {
+
+        #blog {
+            .pull-right {
+                order: 0;
+            }
+
+
+        }
+    }
+}

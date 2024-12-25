@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/package/swiper-bundle.css">
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/shop.css" />
+    <link rel="stylesheet" href="./public/css/services.css" />
+    <link rel="stylesheet" href="./public/css/service-detail.css" />
+    <link rel="stylesheet" href="./public/css/blog.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="preloader_active" style="display: block;">
+        <div id="close_loader" class="text-center">
+            <button class="btn btn-primary">CLOSE</button>
+        </div>
+        <script>
+            const btnCloseLoader = document.getElementById('close_loader');
+            btnCloseLoader.addEventListener('click', () => {
+                document.getElementById('preloader_active').style.display = 'none';
+            });
+        </script>
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+    <button id="btn-scroll-to-top" onclick="scrollToTop()"></button>
+    <div class="top-notification-bar">
+        <div class="container">
+            <div class="row">
+                <div class="notification-entry text-center col-xs-12">
+                    <span>All Featured Product 50% off <a href="">Buy Now</a></span>
+                    <button class="notification-close-btn"><i class="fa-solid fa-x"></i><button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="shopify-section-header" id="sticky-header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="top-header col-md-3 col-sm-6 col-xs-6 col-6">
+                        <div class="logo home-2">
+                            <a href="/" class="theme-logo">
+                                <img src="./public/images/logo-final_240x.png"
+                                    alt="My Pets - Animal Pets Shopify Theme " />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mid-header col-md-7 hidden-sm hidden-xs">
+                        <nav id="main-nav">
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="index.html">HOME</a></button>
+                                <div class="dropdown-content">
+                                    <a href="#"> home 1</a>
+                                    <a href="#">home 2 (box)</a>
+                                    <a href="#">Home 3</a>
+                                    <a href="#">Home 4</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item nav-shop">
+                                <button class="dropbtn"> <a href="shop.html">shop</a></button>
+                                <div class="dropdown-content">
+                                    <ul class="dropdown-menus">
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">instruments</a>
+                                            <ul>
+                                                <li><a href="">Clipper Blade</a></li>
+                                                <li><a href="">Coarse-Toothed Comb</a></li>
+                                                <li><a href="">Nail Clippers</a></li>
+                                                <li><a href="">Dog Rake</a></li>
+                                                <li><a href="">Cat Toy</a></li>
+                                                <li><a href="">Nail Grinder</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li"><a class="title-mega-menu" href="">Foods</a>
+                                            <ul>
+                                                <li><a href="">Raw meats</a></li>
+                                                <li><a href="">canned </a></li>
+                                                <li><a href="">freeze dried </a></li>
+                                                <li><a href="">kibble</a></li>
+                                                <li><a href="">dehydrated</a></li>
+                                                <li><a href="">Rx line</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">Accessories</a>
+                                            <ul>
+                                                <li><a href="">Rabbit </a></li>
+                                                <li><a href="">Cattery Cages </a></li>
+                                                <li><a href="">Cat toy</a></li>
+                                                <li><a href="">Dog Gumboots</a></li>
+                                                <li><a href="">Kong Extreme</a></li>
+                                                <li><a href="">show cage</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li image-menu">
+                                            <a href="">
+                                                <img class="lazyload" data-src="" src="./public/images/menu_shop.jpg"
+                                                    alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="services.html">services</a></button>
+                                <div class="dropdown-content">
+                                    <a href="service-detail.html">Full Grooming</a>
+                                    <a href="service-detail.html">Bath and Dry</a>
+                                    <a href="service-detail.html">Styling</a>
+                                    <a href="service-detail.html">Medical Bath</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="#">pages</a></button>
+                                <div class="dropdown-content">
+                                    <a href="blog.html">Blog</a>
+                                    <a href="about-us.html">About Us</a>
+                                    <a href="shipping-policy.html">Shipping Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="product.html">product</a></button>
+                                <div class="dropdown-content">
+                                    <a href="product-detail.html">Simple Product</a>
+                                    <a href="product-detail.html"> Variable Product</a>
+                                    <a href="product-detail.html"> Affiliate Link Product</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="contact.html">contact</a></button>
+                                <!-- <div class="dropdown-content">
+                                </div> -->
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bot-header col-md-2 col-sm-6 col-xs-6 col-6">
+                        <div class="menu-list text-right">
+                            <div class="dropdown menu-list-item">
+                                <button class="dropbtn"><i class="fa fa-user" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="login.html">My account</a>
+                                    <a href="wish-list.html">Wishlist</a>
+                                    <a href="check-out.html">Checkout</a>
+                                </div>
+                            </div>
+                            <div class="dropdown menu-list-item search-header">
+                                <form action="">
+                                    <button class="dropbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <div class="dropdown-content">
+                                        <input id="Search" name="q" value="" placeholder="Search our store">
+                                        <button type="submit" class="search-btn"><i class="fa fa-search"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dropdown menu-list-item cart-header">
+                                <button class="dropbtn"><a href="cart.html"><i class="fa fa-cart-plus"
+                                            aria-hidden="true"></i></a></button>
+                                <div class="dropdown-content">
+                                    <div class="your-cart">
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                    </div>
+                                    <div class="cart-total">
+                                        <h6>
+                                            <span class="lbl">Total:</span> <span class="shopping-cart__total"><span
+                                                    class="money">$90.00 USD</span></span>
+                                        </h6>
+                                        <a href="check-out.html" class="checkout-btn">Check Out</a>
+                                    </div>
+                                    <!-- <span class="not-item-cart">Your Cart is empty</span> -->
+                                </div>
+                            </div>
+                            <button class="toggle-menu-nav" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                    class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="breadcrumbs-section mb-100">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="breadcrumbs-inner text-center ptb-100">
+                                <h1 class="breadcrumbs-title">News</h1>
+                                <nav class="" role="navigation" aria-label="breadcrumbs">
+                                    <ul class="breadcrumb-list">
+                                        <li>
+                                            <a href="/" title="Back to the frontpage">Home</a>
+                                        </li>
+                                        <li>
+                                            /
+                                        </li>
+                                        <span>Products</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blog" class="blog-area mb-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-lg-9 pull-right">
+                        <div class="blog-content">
+                            <div class="row grid-blog">
+                                <!-- item -->
+                                <div class="col-12 grid-item">
+                                    <div class="row blog-post-single-item">
+                                        <div class="col-md-5 col-lg-5 col-sm-12 single-item-img">
+                                            <a href="/blogs/services/medical-bath"><img class="lazyload"
+                                                    data-src="//my-pets-1.myshopify.com/cdn/shop/articles/4_large.jpg?v=1508996506"
+                                                    alt="Dar por resultado muchos sitios web que usan"
+                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/4_large.jpg?v=1508996506">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 single-item-content">
+                                            <h2><a href="/blogs/services/medical-bath">Medical Bath</a></h2>
+                                            <h4>October 26, 2017</h4>
+                                            <h4 class="post-by">Posted By My Pets 1 Admin</h4>
+                                            <p>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que
+                                                no hay nada avergonzante escondido en el medio del texto. </p>
+                                            <div class="blog-action">
+                                                <a href="/blogs/services/medical-bath" class="read-more-btn">Read
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="col-12 grid-item">
+                                    <div class="row blog-post-single-item">
+                                        <div class="col-md-5 col-lg-5 col-sm-12 single-item-img">
+                                            <a href="/blogs/services/medical-bath"> <img class="lazyload"
+                                                    data-src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396"
+                                                    alt="Estos textos hacen parecerlo un"
+                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 single-item-content">
+                                            <h2><a href="/blogs/services/medical-bath">Medical Bath</a></h2>
+                                            <h4>October 26, 2017</h4>
+                                            <h4 class="post-by">Posted By My Pets 1 Admin</h4>
+                                            <p>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que
+                                                no hay nada avergonzante escondido en el medio del texto. </p>
+                                            <div class="blog-action">
+                                                <a href="/blogs/services/medical-bath" class="read-more-btn">Read
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="col-12 grid-item">
+                                    <div class="row blog-post-single-item">
+                                        <div class="col-md-5 col-lg-5 col-sm-12 single-item-img">
+                                            <a href="/blogs/services/medical-bath"> <img class="lazyload"
+                                                    data-src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396"
+                                                    alt="Estos textos hacen parecerlo un"
+                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 single-item-content">
+                                            <h2><a href="/blogs/services/medical-bath">Medical Bath</a></h2>
+                                            <h4>October 26, 2017</h4>
+                                            <h4 class="post-by">Posted By My Pets 1 Admin</h4>
+                                            <p>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que
+                                                no hay nada avergonzante escondido en el medio del texto. </p>
+                                            <div class="blog-action">
+                                                <a href="/blogs/services/medical-bath" class="read-more-btn">Read
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="col-12 grid-item">
+                                    <div class="row blog-post-single-item">
+                                        <div class="col-md-5 col-lg-5 col-sm-12 single-item-img">
+                                            <a href="/blogs/services/medical-bath"> <img class="lazyload"
+                                                    data-src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396"
+                                                    alt="Estos textos hacen parecerlo un"
+                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/25_large.jpg?v=1508996396">
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-12 single-item-content">
+                                            <h2><a href="/blogs/services/medical-bath">Medical Bath</a></h2>
+                                            <h4>October 26, 2017</h4>
+                                            <h4 class="post-by">Posted By My Pets 1 Admin</h4>
+                                            <p>Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que
+                                                no hay nada avergonzante escondido en el medio del texto. </p>
+                                            <div class="blog-action">
+                                                <a href="/blogs/services/medical-bath" class="read-more-btn">Read
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pagination">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="pagination-area">
+
+                                    <div class="pagination-links">
+                                        <ul>
+                                            <li>
+                                                <span class="page current">1</span>
+                                                <span class="page">
+                                                    <a href="/collections/all?page=2&amp;sort_by=title-descending&amp;view=list"
+                                                        title="">2</a>
+                                                </span>
+                                                <span class="next">
+                                                    <a href="/collections/all?page=2&amp;sort_by=title-descending&amp;view=list"
+                                                        title="">&gt;</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 pull-left col-sm-12 col-lg-3 col-xs-12">
+                        <div class="sidebar-widget-area storefront-filter">
+                            <div class="sidebar-widget-area">
+                                <div class="sidebar-widget">
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">search</h6>
+                                        <div class="search-form">
+                                            <form action="/search" method="get" role="search">
+                                                <div class="form-input">
+                                                    <input type="search" name="q" value=""
+                                                        placeholder="Enter your search key ... "
+                                                        aria-label="Enter your search key ... " required="">
+                                                    <button type="submit">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">Recent Post</h6>
+                                        <div class="menu-list recent-posts">
+                                            <ul>
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+                                                            <a href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/4_480x480.jpg?v=1508996506"
+                                                                    alt="Dar por resultado muchos sitios web que usan"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan">Dar
+                                                                    por resultado muchos sitios web que usan</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 20, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+
+
+                                                            <a href="/blogs/news/ipsum-como-su-texto-por-defecto"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/2_480x480.jpg?v=1508996476"
+                                                                    alt="Ipsum como su texto por defecto"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/ipsum-como-su-texto-por-defecto">Ipsum
+                                                                    como su texto por defecto</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 19, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+
+
+                                                            <a href="/blogs/news/desconocido-uso-una-galeria-de-textos"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/18_480x480.jpg?v=1508996456"
+                                                                    alt="Desconocido usó una galería de textos"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/desconocido-uso-una-galeria-de-textos">Desconocido
+                                                                    usó una galería de textos</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 18, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+
+
+                                                            <a href="/blogs/news/al-contrario-del-pensamiento-popular"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/17_480x480.jpg?v=1508996401"
+                                                                    alt="Al contrario del pensamiento popular"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/al-contrario-del-pensamiento-popular">Al
+                                                                    contrario del pensamiento popular</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 17, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+                                                            <a href="/blogs/news/estos-textos-hacen-parecerlo-un"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/25_480x480.jpg?v=1508996396"
+                                                                    alt="Estos textos hacen parecerlo un"></a>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/estos-textos-hacen-parecerlo-un">Estos
+                                                                    textos hacen parecerlo un</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 16, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">Archive</h6>
+                                        <ul class="archive-sidebar">
+                                            <li><a href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan"
+                                                    title="">Dar por resultado muchos sitios web que usan</a></li>
+                                            <li><a href="/blogs/news/ipsum-como-su-texto-por-defecto" title="">Ipsum
+                                                    como su texto por defecto</a></li>
+                                            <li><a href="/blogs/news/desconocido-uso-una-galeria-de-textos"
+                                                    title="">Desconocido usó una galería de textos</a></li>
+                                            <li><a href="/blogs/news/al-contrario-del-pensamiento-popular" title="">Al
+                                                    contrario del pensamiento popular</a></li>
+                                            <li><a href="/blogs/news/estos-textos-hacen-parecerlo-un" title="">Estos
+                                                    textos hacen parecerlo un</a></li>
+                                            <li><a href="/blogs/news/el-punto-de-usar-lorem-ipsum-es-que" title="">El
+                                                    punto de usar Lorem Ipsum es que</a></li>
+                                            <li><a href="/blogs/news/hay-muchas-variaciones-de-los-pasajes" title="">Hay
+                                                    muchas variaciones de los pasajes</a></li>
+                                            <li><a href="/blogs/news/contenido-del-texto-de-un-sitio-mientras-que-mira"
+                                                    title="">Contenido del texto de un sitio mientras que mira</a></li>
+                                            <li><a href="/blogs/news/si-vas-a-utilizar-un-pasaje-de-lorem" title="">Si
+                                                    vas a utilizar un pasaje de Lorem</a></li>
+                                            <li><a href="/blogs/news/el-trozo-de-texto-estandar-de-lorem-ipsum"
+                                                    title="">El trozo de texto estándar de Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">tags</h6>
+                                        <div class="menu-list tag-list">
+                                            <ul>
+                                                <li><a href="/blogs/news/tagged/animal"
+                                                        title="Show articles tagged Animal">Animal</a></li>
+                                                <li><a href="/blogs/news/tagged/bath"
+                                                        title="Show articles tagged Bath">Bath</a></li>
+                                                <li><a href="/blogs/news/tagged/cat"
+                                                        title="Show articles tagged Cat">Cat</a></li>
+                                                <li><a href="/blogs/news/tagged/dog"
+                                                        title="Show articles tagged Dog">Dog</a></li>
+                                                <li><a href="/blogs/news/tagged/dry"
+                                                        title="Show articles tagged Dry">Dry</a></li>
+                                                <li><a href="/blogs/news/tagged/food"
+                                                        title="Show articles tagged Food">Food</a></li>
+                                                <li><a href="/blogs/news/tagged/grooming"
+                                                        title="Show articles tagged Grooming">Grooming</a></li>
+                                                <li><a href="/blogs/news/tagged/medical"
+                                                        title="Show articles tagged Medical">Medical</a></li>
+                                                <li><a href="/blogs/news/tagged/pet"
+                                                        title="Show articles tagged Pet">Pet</a></li>
+                                                <li><a href="/blogs/news/tagged/shovel"
+                                                        title="Show articles tagged Shovel">Shovel</a></li>
+                                                <li><a href="/blogs/news/tagged/styling"
+                                                        title="Show articles tagged Styling">Styling</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="footer-area">
+        <div class="footer-top ">
+            <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="logo">
+                                <div class="footer-logo">
+                                    <a href="/">
+                                        <img src="./public/images/logo.png" alt="My Pets - Animal Pets Shopify Theme ">
+                                    </a>
+                                </div>
+                                <div class="address">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>Your contact information here. <br>Demo information.</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                            <p>+88 3333 6789</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>info@example.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title">Our Services</h6>
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/full-grooming"
+                                                title="">Full Grooming</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/bath-and-dry"
+                                                title="">Bath and Dry</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/styling"
+                                                title="">Styling</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/medical-bath"
+                                                title="">Medical Bath</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+
+                                <h6 class="widget-title">Quick Menu</h6>
+
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="/account" title="">My account</a></li>
+                                        <li><a href="/pages/wishlist" title="">Wishlist</a></li>
+                                        <li><a href="/checkout" title="">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title newsletter-title">Newsletter</h6>
+                                <div class="single-footer-newsletter">
+                                    <p>Lorem ipsum dolor sit amet, consectt us adip isicing elit, sed do edunt.</p>
+                                    <div id="mc_embed_signup">
+                                        <form action="" id="Contact_footer" class="contact-form">
+                                            <input type="hidden" name="form_type" value="customer"><input type="hidden"
+                                                name="utf8" value="✓">
+                                            <div class="submit-form">
+                                                <input class="form-control" type="email" id="Email"
+                                                    placeholder="email@example.com" autocorrect="off"
+                                                    autocapitalize="off">
+                                                <div class="clear">
+                                                    <button type="submit" id="subscribe" class="button" name="commit">
+                                                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="copyright-text">
+                            <p></p>
+                            <p>Copyright © 2021 <strong>MyPets </strong>| Built with <strong>MyPets</strong> by
+                                <strong>MyPets</strong>.
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="single-footer-soical">
+                            <ul>
+                                <li><a href="#" title="Google-plus"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.footer-bottom -->
+    </footer>
+    <script src="./public/package/swiper-bundle.min.js"></script>
+    <script src="./public/js/home-swiper.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>

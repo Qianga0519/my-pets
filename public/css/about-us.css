@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+.ptb-100 {
+  padding: 100px 0;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main#main-content #about-us .about-us-left {
+  order: 1;
+}
+main#main-content #about-us .about-us-left img {
+  width: 100%;
+}
+main#main-content #about-us .about-us-right h1 {
+  font-weight: bold;
+  color: #54cd38;
+  text-transform: uppercase;
+}
+main#main-content #about-us .about-us-right h6 {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+main#main-content #about-us .about-us-right p {
+  margin: 30px 0 15px;
+  font-family: "Raleway", "sans-serif";
+  color: #666;
+  line-height: 30px;
+  font-weight: 400;
+}
+main#main-content #about-us .about-us-right a {
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background: #54cd38 none repeat scroll 0% 0%;
+  color: #fff;
+  width: 115px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 12px;
+  margin: 14px 0 0;
+  padding: 10px 16px;
+  display: inline-block;
+  text-decoration: none;
+}
+main#main-content #about-us .about-us-right a span {
+  z-index: 99;
+  position: relative;
+}
+main#main-content #about-us .about-us-right a::before {
+  content: "";
+  position: absolute;
+  background: rgba(140, 140, 140, 0.3019607843);
+  width: 0%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  transition: all 0.5s ease;
+  z-index: 9;
+}
+main#main-content #about-us .about-us-right a:hover::before {
+  width: 100%;
+}
+main#main-content #our-team .title-our-team {
+  margin-top: 95px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+}
+main#main-content #our-team .title-our-team::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  top: calc(100% - 1px);
+  left: 50%;
+  transform: translateX(-20px);
+  position: absolute;
+  background: #999;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img {
+  position: relative;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img a {
+  width: 100%;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img a img {
+  width: 100%;
+  height: auto;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul {
+  display: flex;
+  gap: 10px;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  transform: translateY(15px);
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li:nth-child(4) {
+  transition-delay: 0.4s;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li i {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-img .member-social-links ul li i:hover {
+  color: #54cd38;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-info {
+  text-align: center;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-info h6.member-name {
+  color: #555;
+  font-weight: 700;
+  margin: 21px 0 0;
+  text-transform: uppercase;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-info p.member-designation {
+  color: #54cd38;
+  font-weight: 500;
+  margin: 3px 0 0;
+  text-transform: capitalize;
+}
+main#main-content #our-team .team-members-area .single-team-member .member-info p {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  margin: 0 0 15px;
+}
+main#main-content #our-team .team-members-area .single-team-member:hover .member-img .member-social-links ul li {
+  transform: translateY(-15px);
+  visibility: visible;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=about-us.css.map */

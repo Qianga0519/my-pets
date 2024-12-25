@@ -13,30 +13,32 @@
     <link rel="stylesheet" href="./public/css/shop.css" />
     <link rel="stylesheet" href="./public/css/services.css" />
     <link rel="stylesheet" href="./public/css/service-detail.css" />
+    <link rel="stylesheet" href="./public/css/blog.css" />
+    <link rel="stylesheet" href="./public/css/blog-detail.css" />
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
-    <div id="preloader_active" style="display: block;">
-        <div id="close_loader" class="text-center">
-            <button class="btn btn-primary">CLOSE</button>
-        </div>
-        <script>
-            const btnCloseLoader = document.getElementById('close_loader');
-            btnCloseLoader.addEventListener('click', () => {
-                document.getElementById('preloader_active').style.display = 'none';
-            });
-        </script>
-        <div id="loading-center">
-            <div id="loading-center-absolute">
-                <div class="object" id="object_four"></div>
-                <div class="object" id="object_three"></div>
-                <div class="object" id="object_two"></div>
-                <div class="object" id="object_one"></div>
-            </div>
+<body> <div id="preloader_active" style="display: block;">
+    <div id="close_loader" class="text-center" >
+        <button class="btn btn-primary">CLOSE</button>
+    </div>
+    <script>
+        const btnCloseLoader = document.getElementById('close_loader');
+        btnCloseLoader.addEventListener('click', () => {
+            document.getElementById('preloader_active').style.display = 'none';
+        });
+    </script>
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="object" id="object_four"></div>
+            <div class="object" id="object_three"></div>
+            <div class="object" id="object_two"></div>
+            <div class="object" id="object_one"></div>
         </div>
     </div>
+</div>
     <button id="btn-scroll-to-top" onclick="scrollToTop()"></button>
     <div class="top-notification-bar">
         <div class="container">
@@ -235,11 +237,11 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="breadcrumbs-inner text-center ptb-100">
-                                <h1 class="breadcrumbs-title">Medical Bath</h1>
+                                <h1 class="breadcrumbs-title">News</h1>
                                 <nav class="" role="navigation" aria-label="breadcrumbs">
                                     <ul class="breadcrumb-list">
                                         <li>
-                                            <a href="/" title="Back to the frontpage">Medical Bath</a>
+                                            <a href="/" title="Back to the frontpage">Home</a>
                                         </li>
                                         <li>
                                             /
@@ -254,52 +256,71 @@
                 </div>
             </div>
         </div>
-        <div id="service-blog">
+        <div id="blog-detail" class="blog-detail-area mb-100">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-sm-12 col-lg-9 pull-right">
-                        <article class="service-blog-post-wrapper">
+                        <article class="blog-detail-post-wrapper">
                             <div class="post-thumbnail">
-                                <a href="/blogs/services/medical-bath" title=""><img
-                                        src="//my-pets-1.myshopify.com/cdn/shop/articles/medical_1024x1024.jpg?v=1509011963"
-                                        alt="Medical Bath"></a>
+                                <img class="lazyload"
+                                    data-src="//my-pets-1.myshopify.com/cdn/shop/articles/4_1024x1024.jpg?v=1508996506"
+                                    alt="Dar por resultado muchos sitios web que usan"
+                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/4_1024x1024.jpg?v=1508996506">
 
                             </div>
                             <div class="post-information">
-                                <h2>Medical Bath</h2>
+                                <h2>Dar por resultado muchos sitios web que usan</h2>
+                                <div class="entry-meta">
+                                    <span class="author-meta">
+                                        <i class="fa fa-user" aria-hidden="true"></i><a href="#">My Pets 1
+                                            Admin</a>
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-clock"></i> November 20, 2017
+                                    </span>
+
+                                    <span>
+                                        <ul>
+                                            <i class="fa fa-tags" aria-hidden="true"></i>
+                                            <li><a href="/blogs/news/tagged/animal"
+                                                    title="Show articles tagged Animal">Animal</a>,</li>
+                                            <li><a href="/blogs/news/tagged/bath"
+                                                    title="Show articles tagged Bath">Bath</a>,</li>
+                                            <li><a href="/blogs/news/tagged/cat"
+                                                    title="Show articles tagged Cat">Cat</a>,</li>
+                                            <li><a href="/blogs/news/tagged/dog"
+                                                    title="Show articles tagged Dog">Dog</a>,</li>
+                                            <li><a href="/blogs/news/tagged/dry"
+                                                    title="Show articles tagged Dry">Dry</a></li>
+                                        </ul>
+                                    </span>
+
+                                    <span><i class="fa fa-comment" aria-hidden="true"></i> <a href="#comments"
+                                            id="show-comment">1
+                                            comment</a></span>
+                                </div>
                                 <div class="entry-content">
                                     <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de
-                                        texto.
-                                        Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año
-                                        1500,
-                                        cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido
-                                        usó una
-                                        galería de textos y los mezcló de tal manera que logró hacer un libro de textos
-                                        especimen.</p>
+                                        texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde
+                                        el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta)
+                                        desconocido usó una galería de textos y los mezcló de tal manera que logró hacer
+                                        un libro de textos especimen.</p>
                                     <blockquote>No sólo sobrevivió 500 años, sino que tambien ingresó como texto de
-                                        relleno en
-                                        documentos electrónicos, quedando esencialmente igual al original.</blockquote>
+                                        relleno en documentos electrónicos, quedando esencialmente igual al original.
+                                    </blockquote>
                                     <p>Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales
-                                        contenian
-                                        pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
-                                        por
-                                        ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.<br>Es un
-                                        hecho
-                                        establecido hace demasiado tiempo que un lector se distraerá con el contenido
-                                        del texto
-                                        de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que
-                                        tiene una
-                                        distribución más o menos normal de las letras, al contrario de usar textos como
-                                        por
-                                        ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un
-                                        español que se
-                                        puede leer. Muchos paquetes de autoedición y editores de páginas web usan el
-                                        Lorem Ipsum
+                                        contenian pasajes de Lorem Ipsum, y más recientemente con software de
+                                        autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de
+                                        Lorem Ipsum.<br>Es un hecho establecido hace demasiado tiempo que un lector se
+                                        distraerá con el contenido del texto de un sitio mientras que mira su diseño. El
+                                        punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de
+                                        las letras, al contrario de usar textos como por ejemplo "Contenido aquí,
+                                        contenido aquí". Estos textos hacen parecerlo un español que se puede leer.
+                                        Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum
                                         como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por
                                         resultado muchos sitios web que usan este texto si se encuentran en estado de
                                         desarrollo. Muchas versiones han evolucionado a través de los años, algunas
-                                        veces por
-                                        accidente, otras veces a propósito</p>
+                                        veces por accidente, otras veces a propósito</p>
                                 </div>
                                 <div class="social-sharing">
                                     <h3>Share this post</h3>
@@ -309,57 +330,265 @@
                                 </div>
                             </div>
                         </article>
+                        <div class="single-post-comments">
+
+                            <div class="comments-area" id="comments">
+                                <div class="comments-heading">
+                                    <h3>1 comment</h3>
+                                </div>
+                                <div class="comments-list">
+                                    <ul class="no-bullets">
+                                        <li id="47123824712" class="comment first last ">
+                                            <div class="comment comments-details">
+                                                <div class="comments-content-wrap rte">
+                                                    <span>
+
+                                                        Post author
+
+                                                        <b>zxcvzxc</b> on <span class="post-time">October 03,
+                                                            2019</span>
+                                                    </span>
+                                                    <p>xzcvasdrewqrqwe</p>
+                                                </div>
+                                                <span>
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li>
+
+                                        </li>
+                                    </ul>
+
+                                    <hr>
+
+                                </div>
+
+                            </div>
+                            <div class="comment-respond">
+                                <h3 class="comment-reply-title">Leave a comment</h3>
+                                <span class="email-notes">Your email address will not be published. Required fields are
+                                    marked *</span>
+                                <form method="post"
+                                    action="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan/comments#comment_form"
+                                    id="comment_form" accept-charset="UTF-8" class="comment-form"><input type="hidden"
+                                        name="form_type" value="new_comment"><input type="hidden" name="utf8" value="✓">
+                                       
+                                    <div class="row">
+                                        <div class="col-12 col-md-12 col-lg-6">
+                                            <label for="CommentAuthor">Name<span class="required">*</span></label>
+                                            <input type="text" name="comment[author]" id="CommentAuthor"
+                                                class="input-full" placeholder="Name" value="">
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-6">
+                                            <label for="CommentEmail">Email<span class="required">*</span></label>
+                                            <input type="email" name="comment[email]" id="CommentEmail"
+                                                class="input-full" placeholder="Email" value="">
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-12 comment-form-comment">
+                                            <label for="CommentBody">Message<span class="required">*</span></label>
+                                            <textarea name="comment[body]" id="CommentBody" cols="30" rows="10"
+                                                class="input-full" placeholder="Message"></textarea>
+
+                                            <input type="submit" class="btn comment-btn" value="Post comment">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="col-md-12 pull-left col-sm-12 col-lg-3 col-xs-12">
-                        <div class="sidebar-widget-area">
-                            <div class="single-sidebar-widget">
-                                <h6 class="widget-title">Services List</h6>
-                                <div class="menu-list recent-posts">
-                                    <ul>
-                                        <li>
-                                            <div class="post-wrapper">
-                                                <div class="post-info">
-                                                    <h3 class="post-title recent-post-s"><a
-                                                            href="/blogs/services/medical-bath">Medical Bath</a></h3>
+                        <div class="sidebar-widget-area storefront-filter">
+                            <div class="sidebar-widget-area">
+                                <div class="sidebar-widget">
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">search</h6>
+                                        <div class="search-form">
+                                            <form action="/search" method="get" role="search">
+                                                <div class="form-input">
+                                                    <input type="search" name="q" value=""
+                                                        placeholder="Enter your search key ... "
+                                                        aria-label="Enter your search key ... " required="">
+                                                    <button type="submit">
+                                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                                    </button>
                                                 </div>
-                                            </div>
-                                        </li>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">Recent Post</h6>
+                                        <div class="menu-list recent-posts">
+                                            <ul>
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+                                                            <a href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/4_480x480.jpg?v=1508996506"
+                                                                    alt="Dar por resultado muchos sitios web que usan"></a>
 
-                                        <li>
-                                            <div class="post-wrapper">
-                                                <div class="post-info">
-                                                    <h3 class="post-title recent-post-s"><a
-                                                            href="/blogs/services/styling">Styling</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan">Dar
+                                                                    por resultado muchos sitios web que usan</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 20, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
 
-                                        <li>
-                                            <div class="post-wrapper">
-                                                <div class="post-info">
-                                                    <h3 class="post-title recent-post-s"><a
-                                                            href="/blogs/services/bath-and-dry">Bath and Dry</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
 
-                                        <li>
-                                            <div class="post-wrapper">
-                                                <div class="post-info">
-                                                    <h3 class="post-title recent-post-s"><a
-                                                            href="/blogs/services/full-grooming">Full Grooming</a></h3>
-                                                </div>
-                                            </div>
-                                        </li>
 
-                                    </ul>
+                                                            <a href="/blogs/news/ipsum-como-su-texto-por-defecto"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/2_480x480.jpg?v=1508996476"
+                                                                    alt="Ipsum como su texto por defecto"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/ipsum-como-su-texto-por-defecto">Ipsum
+                                                                    como su texto por defecto</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 19, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+
+
+                                                            <a href="/blogs/news/desconocido-uso-una-galeria-de-textos"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/18_480x480.jpg?v=1508996456"
+                                                                    alt="Desconocido usó una galería de textos"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/desconocido-uso-una-galeria-de-textos">Desconocido
+                                                                    usó una galería de textos</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 18, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+
+
+                                                            <a href="/blogs/news/al-contrario-del-pensamiento-popular"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/17_480x480.jpg?v=1508996401"
+                                                                    alt="Al contrario del pensamiento popular"></a>
+
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/al-contrario-del-pensamiento-popular">Al
+                                                                    contrario del pensamiento popular</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 17, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="post-wrapper">
+                                                        <div class="post-thumb">
+                                                            <a href="/blogs/news/estos-textos-hacen-parecerlo-un"
+                                                                title=""><img
+                                                                    src="//my-pets-1.myshopify.com/cdn/shop/articles/25_480x480.jpg?v=1508996396"
+                                                                    alt="Estos textos hacen parecerlo un"></a>
+                                                        </div>
+                                                        <div class="post-info">
+                                                            <h3 class="post-title recent-post-s"><a
+                                                                    href="/blogs/news/estos-textos-hacen-parecerlo-un">Estos
+                                                                    textos hacen parecerlo un</a></h3>
+                                                            <div class="post-date recent-post-s">
+                                                                November 16, 2017
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">Archive</h6>
+                                        <ul class="archive-sidebar">
+                                            <li><a href="/blogs/news/dar-por-resultado-muchos-sitios-web-que-usan"
+                                                    title="">Dar por resultado muchos sitios web que usan</a></li>
+                                            <li><a href="/blogs/news/ipsum-como-su-texto-por-defecto" title="">Ipsum
+                                                    como su texto por defecto</a></li>
+                                            <li><a href="/blogs/news/desconocido-uso-una-galeria-de-textos"
+                                                    title="">Desconocido usó una galería de textos</a></li>
+                                            <li><a href="/blogs/news/al-contrario-del-pensamiento-popular" title="">Al
+                                                    contrario del pensamiento popular</a></li>
+                                            <li><a href="/blogs/news/estos-textos-hacen-parecerlo-un" title="">Estos
+                                                    textos hacen parecerlo un</a></li>
+                                            <li><a href="/blogs/news/el-punto-de-usar-lorem-ipsum-es-que" title="">El
+                                                    punto de usar Lorem Ipsum es que</a></li>
+                                            <li><a href="/blogs/news/hay-muchas-variaciones-de-los-pasajes" title="">Hay
+                                                    muchas variaciones de los pasajes</a></li>
+                                            <li><a href="/blogs/news/contenido-del-texto-de-un-sitio-mientras-que-mira"
+                                                    title="">Contenido del texto de un sitio mientras que mira</a></li>
+                                            <li><a href="/blogs/news/si-vas-a-utilizar-un-pasaje-de-lorem" title="">Si
+                                                    vas a utilizar un pasaje de Lorem</a></li>
+                                            <li><a href="/blogs/news/el-trozo-de-texto-estandar-de-lorem-ipsum"
+                                                    title="">El trozo de texto estándar de Lorem Ipsum</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="single-sidebar">
+                                        <h6 class="widget-title">tags</h6>
+                                        <div class="menu-list tag-list">
+                                            <ul>
+                                                <li><a href="/blogs/news/tagged/animal"
+                                                        title="Show articles tagged Animal">Animal</a></li>
+                                                <li><a href="/blogs/news/tagged/bath"
+                                                        title="Show articles tagged Bath">Bath</a></li>
+                                                <li><a href="/blogs/news/tagged/cat"
+                                                        title="Show articles tagged Cat">Cat</a></li>
+                                                <li><a href="/blogs/news/tagged/dog"
+                                                        title="Show articles tagged Dog">Dog</a></li>
+                                                <li><a href="/blogs/news/tagged/dry"
+                                                        title="Show articles tagged Dry">Dry</a></li>
+                                                <li><a href="/blogs/news/tagged/food"
+                                                        title="Show articles tagged Food">Food</a></li>
+                                                <li><a href="/blogs/news/tagged/grooming"
+                                                        title="Show articles tagged Grooming">Grooming</a></li>
+                                                <li><a href="/blogs/news/tagged/medical"
+                                                        title="Show articles tagged Medical">Medical</a></li>
+                                                <li><a href="/blogs/news/tagged/pet"
+                                                        title="Show articles tagged Pet">Pet</a></li>
+                                                <li><a href="/blogs/news/tagged/shovel"
+                                                        title="Show articles tagged Shovel">Shovel</a></li>
+                                                <li><a href="/blogs/news/tagged/styling"
+                                                        title="Show articles tagged Styling">Styling</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
     <footer id="footer" class="footer-area">
@@ -488,9 +717,6 @@
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./public/js/main.js"></script>
-    <script>
-
-    </script>
 </body>
 
 </html>
