@@ -8,6 +8,7 @@ window.onscroll = function () {
         btnScrollToTop.style.opacity = '1'
         btnScrollToTop.style.visibility = 'visible'
         btnScrollToTop.style.transform = 'translateY(-20px)'
+        btnScrollToTop.style.zIndex = '999'
     } else {
         header.style.top = "-150px";
         btnScrollToTop.style.opacity = '0'

@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="./public/css/blog.css" />
     <link rel="stylesheet" href="./public/css/blog-detail.css" />
     <link rel="stylesheet" href="./public/css/about-us.css" />
-
+    <link rel="stylesheet" href="./public/css/contact-us.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
@@ -232,6 +233,7 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         </div>
     </header>
+
     <main id="main-content">
         <div class="breadcrumbs-section mb-100">
             <div class="breadcrumbs">
@@ -239,7 +241,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="breadcrumbs-inner text-center ptb-100">
-                                <h1 class="breadcrumbs-title">About Us</h1>
+                                <h1 class="breadcrumbs-title">Contact</h1>
                                 <nav class="" role="navigation" aria-label="breadcrumbs">
                                     <ul class="breadcrumb-list">
                                         <li>
@@ -258,125 +260,91 @@
                 </div>
             </div>
         </div>
-        <div id="about-us" class="about-us-area mb-100">
-            <!-- ABOUT US -->
+        <div id="contact-us" class="contact-us-area mb-100">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-12 about-us-left">
-                        <img src="./public/images/story_aee88b17-96e5-4148-9524-571a7932f94d.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-12 about-us-right">
-                        <h1>Our Story</h1>
-                        <h6>From 1990 to 2017</h6>
-                        <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a.
-                            Aliquam condimentum mattis neque sed pretium. Vestibulum quis porst itor duiest Quisque
-                            viverra nunc mi, a pulvinar purus condimentum. Vestibulum quis porttitor dui! Quisque
-                            viverra nunc mi, a pulvinar purus condim entum.
-
-                        </p>
-                        <p> Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a.
-                            Aliquam condimentum mattis neque sed pretium. Vestibulum quis porst itor duiest Quisque
-                            viverra nunc mi, a pulvinar purus condimentum. Vestibulum quis porttitor dui! Quisque
-                            viverra nunc mi, a pulvinar purus condim entum.</p>
-
+                <div class="contact-head mb-100">
+                    <div class="row">
+                        <div class="col">
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="our-team" class="our-team-area mb-100">
-            <!-- ABOUT US -->
-            <div class="container">
-                <h5 class="title-our-team">crazy team</h5>
-                <div class="team-members-area">
+                <div class="contact-middle mb-100">
                     <div class="row">
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/4_3bdb70a3-3179-4eea-8313-fa57407905fa_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="single-contact-content">
+                                <div class="contact-icon">
+                                    <i class="fa fa-phone-square" aria-hidden="true"></i>
                                 </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Sara</h6>
-                                    <p class="member-designation">Admin</p>
-                                </div>
+                                <h5>Phone</h5>
+                                <span>Phone1. <a href="tel:88 668 2236">88 668 2236</a></span>
+                                <span>Phone2. <a href="tel:88 668 1000">88 668 1000</a></span>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="single-contact-content">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <h5>ADDRESS</h5>
+                                <p>No36. 262 Milacina Mrest Street, <br>US Paris France</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="single-contact-content">
+                                <div class="contact-icon">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <h5>E-mail</h5>
+                                <span><a href="mailto:wpleebros@gmail.com">wpleebros@gmail.com</a></span>
+                                <span><a href="mailto:michael@leebros.us">michael@leebros.us</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-bottom mb-100">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="contact-form-area">
+                                <h5>leave a message</h5>
+                                <div class="contact-form">
+                                    <form method="post" action="/contact#contact_form" id="contact_form"
+                                        accept-charset="UTF-8" class="contact-form">
+                                        <div class="row">
+                                        <div class="col-md-3 col-lg-6 col-sm-6 col-xs-12">
+                                            <div class="single-field">
 
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/2_0fc5f14b-10cc-4a66-ad8b-c1803f6d0469_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
+                                                <label for="ContactFormName" class="hidden-label">Your
+                                                    name...</label>
+                                                <input type="text" id="ContactFormName" name="contact[your-name]"
+                                                    placeholder="Your name..." value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                                            <div class="single-field">
+                                                <label for="ContactFormEmail" class="hidden-label">Your
+                                                    email...</label>
+                                                <input type="email" id="ContactFormEmail" name="contact[email]"
+                                                    placeholder="Your email..." value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="single-field">
+                                                <label for="ContactFormMessage" class="hidden-label">Message
+                                                    here...</label>
+                                                <textarea id="ContactFormMessage" name="contact[body]"
+                                                    placeholder="Message here..."></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="send-btn-container">
+                                                <input type="submit" class="send-btn" value="Send Message">
+                                            </div>
+                                        </div>
+</div>
+                                    </form>
                                 </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Smith</h6>
-                                    <p class="member-designation">Designer</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/3_b8ec880c-ec37-4343-9753-045ffad96a85_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Anny</h6>
-                                    <p class="member-designation">Researcher</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/1_27d3a851-cd80-4ad8-92d5-8f7279e83958_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Jenny</h6>
-                                    <p class="member-designation">Developer</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -509,6 +477,23 @@
     <script src="./public/js/home-swiper.js"></script>
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Khởi tạo bản đồ
+        const map = L.map('map').setView([10.7769, 106.7009], 13); // Hồ Chí Minh, Việt Nam
+
+        // Thêm lớp bản đồ từ OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+
+        // Thêm marker vào bản đồ
+        L.marker([10.7769, 106.7009]).addTo(map)
+            .bindPopup('TP. Hồ Chí Minh, Việt Nam')
+            .openPopup();
+    </script>
+
     <script src="./public/js/main.js"></script>
 </body>
 

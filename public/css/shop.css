@@ -175,7 +175,7 @@ main#main-content #shop .pull-right .tab-content .shop-grid-area .table-product 
   filter: alpha(opacity=0);
   pointer-events: none;
   visibility: hidden;
-  z-index: 999;
+  z-index: 1;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }

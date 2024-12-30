@@ -1,0 +1,122 @@
+@import "variables";
+@import "mixin";
+@import "spbs";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+    padding   : 0;
+    margin    : 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Montserrat';
+
+}
+
+
+
+main#main-content {
+    #account {
+        h6.account-heading {
+            font-weight   : 700;
+            text-transform: uppercase;
+            margin        : -3px 0 30px;
+        }
+
+        .login-form-area,
+        .registration-form-area,
+        .recover-form-area {
+            border : 1px solid #ddd;
+            padding: 30px;
+
+            form {
+                margin-bottom: 0;
+
+                h6 {
+                    text-transform: uppercase;
+                    font-weight   : 700;
+                    margin        : 0 0 25px;
+                }
+
+                .single-field {
+                    margin: 0 0 10px;
+
+                    label {
+                        display       : block;
+                        font-size     : 13px;
+                        font-weight   : 700;
+                        margin        : 0 0 11px;
+                        text-transform: uppercase;
+
+
+                    }
+
+                    input {
+                        background   : #fafafa none repeat scroll 0 0;
+                        border       : 1px solid #ddd;
+                        border-radius: 0;
+                        height       : 40px;
+                        font-family  : Raleway, sans-serif;
+                        font-size    : 13px;
+                        padding      : 0 15px;
+                        width        : 100%;
+                    }
+                }
+
+                .form-action {
+                    display        : flex;
+                    justify-content: space-between;
+
+                    span {
+                        a {
+                            color    : #333;
+                            display  : inline-block;
+                            font-size: 13px;
+                            margin   : 10px 0 0;
+                        }
+
+                    }
+
+                    input[type=submit] {
+                        background        : #eee none repeat scroll 0 0;
+                        border            : 1px solid #ddd;
+                        border-radius     : 0;
+                        color             : #333;
+                        font-size         : 14px;
+                        padding           : 8px 25px;
+                        text-transform    : uppercase;
+                        -webkit-transition: all .3s ease 0s;
+                        transition        : all .3s ease 0s;
+                    }
+
+                    input[type=submit],
+                    .form-action>label {
+                        float      : right;
+                        margin-left: 20px;
+                    }
+
+                    .register-btn {
+
+                        float             : right;
+                        background        : #eee none repeat scroll 0 0;
+                        border            : 1px solid #ddd;
+                        border-radius     : 0;
+                        color             : #333;
+                        display           : block;
+                        font-size         : 14px;
+                        text-decoration   : none;
+                        padding           : 7px 25px;
+                        text-transform    : uppercase;
+                        -webkit-transition: all .3s ease 0s;
+                        transition        : all .3s ease 0s;
+                    }
+
+                }
+            }
+        }
+
+    }
+}

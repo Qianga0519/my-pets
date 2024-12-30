@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./public/bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/package/swiper-bundle.css">
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/shop.css" />
+    <link rel="stylesheet" href="./public/css/services.css" />
+    <link rel="stylesheet" href="./public/css/service-detail.css" />
+    <link rel="stylesheet" href="./public/css/blog.css" />
+    <link rel="stylesheet" href="./public/css/blog-detail.css" />
+    <link rel="stylesheet" href="./public/css/about-us.css" />
+    <link rel="stylesheet" href="./public/css/product-detail.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="preloader_active" style="display: none;">
+        <div id="close_loader" class="text-center">
+            <button class="btn btn-primary">CLOSE</button>
+        </div>
+        <script>
+            const btnCloseLoader = document.getElementById('close_loader');
+            btnCloseLoader.addEventListener('click', () => {
+                document.getElementById('preloader_active').style.display = 'none';
+            });
+        </script>
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_four"></div>
+                <div class="object" id="object_three"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_one"></div>
+            </div>
+        </div>
+    </div>
+    <button id="btn-scroll-to-top" onclick="scrollToTop()"></button>
+    <div class="top-notification-bar">
+        <div class="container">
+            <div class="row">
+                <div class="notification-entry text-center col-xs-12">
+                    <span>All Featured Product 50% off <a href="">Buy Now</a></span>
+                    <button class="notification-close-btn"><i class="fa-solid fa-x"></i><button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="shopify-section-header" id="sticky-header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="top-header col-md-3 col-sm-6 col-xs-6 col-6">
+                        <div class="logo home-2">
+                            <a href="/" class="theme-logo">
+                                <img src="./public/images/logo-final_240x.png"
+                                    alt="My Pets - Animal Pets Shopify Theme " />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mid-header col-md-7 hidden-sm hidden-xs">
+                        <nav id="main-nav">
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="index.html">HOME</a></button>
+                                <div class="dropdown-content">
+                                    <a href="#"> home 1</a>
+                                    <a href="#">home 2 (box)</a>
+                                    <a href="#">Home 3</a>
+                                    <a href="#">Home 4</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item nav-shop">
+                                <button class="dropbtn"> <a href="shop.html">shop</a></button>
+                                <div class="dropdown-content">
+                                    <ul class="dropdown-menus">
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">instruments</a>
+                                            <ul>
+                                                <li><a href="">Clipper Blade</a></li>
+                                                <li><a href="">Coarse-Toothed Comb</a></li>
+                                                <li><a href="">Nail Clippers</a></li>
+                                                <li><a href="">Dog Rake</a></li>
+                                                <li><a href="">Cat Toy</a></li>
+                                                <li><a href="">Nail Grinder</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li"><a class="title-mega-menu" href="">Foods</a>
+                                            <ul>
+                                                <li><a href="">Raw meats</a></li>
+                                                <li><a href="">canned </a></li>
+                                                <li><a href="">freeze dried </a></li>
+                                                <li><a href="">kibble</a></li>
+                                                <li><a href="">dehydrated</a></li>
+                                                <li><a href="">Rx line</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li">
+                                            <a class="title-mega-menu" href="">Accessories</a>
+                                            <ul>
+                                                <li><a href="">Rabbit </a></li>
+                                                <li><a href="">Cattery Cages </a></li>
+                                                <li><a href="">Cat toy</a></li>
+                                                <li><a href="">Dog Gumboots</a></li>
+                                                <li><a href="">Kong Extreme</a></li>
+                                                <li><a href="">show cage</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-li image-menu">
+                                            <a href="">
+                                                <img class="lazyload" data-src="" src="./public/images/menu_shop.jpg"
+                                                    alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"><a href="services.html">services</a></button>
+                                <div class="dropdown-content">
+                                    <a href="service-detail.html">Full Grooming</a>
+                                    <a href="service-detail.html">Bath and Dry</a>
+                                    <a href="service-detail.html">Styling</a>
+                                    <a href="service-detail.html">Medical Bath</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="#">pages</a></button>
+                                <div class="dropdown-content">
+                                    <a href="blog.html">Blog</a>
+                                    <a href="about-us.html">About Us</a>
+                                    <a href="shipping-policy.html">Shipping Policy</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="product.html">product</a></button>
+                                <div class="dropdown-content">
+                                    <a href="product-detail.html">Simple Product</a>
+                                    <a href="product-detail.html"> Variable Product</a>
+                                    <a href="product-detail.html"> Affiliate Link Product</a>
+                                </div>
+                            </div>
+                            <div class="dropdown nav-item">
+                                <button class="dropbtn"> <a href="contact.html">contact</a></button>
+                                <!-- <div class="dropdown-content">
+                                </div> -->
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="bot-header col-md-2 col-sm-6 col-xs-6 col-6">
+                        <div class="menu-list text-right">
+                            <div class="dropdown menu-list-item">
+                                <button class="dropbtn"><i class="fa fa-user" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                    <a href="account.html">My account</a>
+                                    <a href="wish-list.html">Wishlist</a>
+                                    <a href="check-out.html">Checkout</a>
+                                </div>
+                            </div>
+                            <div class="dropdown menu-list-item search-header">
+                                <form action="">
+                                    <button class="dropbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    <div class="dropdown-content">
+                                        <input id="Search" name="q" value="" placeholder="Search our store">
+                                        <button type="submit" class="search-btn"><i class="fa fa-search"
+                                                aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dropdown menu-list-item cart-header">
+                                <button class="dropbtn"><a href="cart.html"><i class="fa fa-cart-plus"
+                                            aria-hidden="true"></i></a></button>
+                                <div class="dropdown-content">
+                                    <div class="your-cart">
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                        <a href="" class="cart-item">
+                                            <img class="image-item" src="./public/images/8_large.jpg" alt="">
+                                            <div class="detait-item">
+                                                <p>
+                                                    Ceramics large bowl - xl / white / partex</p>
+                                                <p>
+                                                    <span>1</span> x <span>$90.00</span> USD
+                                                </p>
+                                            </div>
+                                            <button class="del-item-btn"><i class="fa-solid fa-x"></i></button>
+                                        </a>
+                                    </div>
+                                    <div class="cart-total">
+                                        <h6>
+                                            <span class="lbl">Total:</span> <span class="shopping-cart__total"><span
+                                                    class="money">$90.00 USD</span></span>
+                                        </h6>
+                                        <a href="check-out.html" class="checkout-btn">Check Out</a>
+                                    </div>
+                                    <!-- <span class="not-item-cart">Your Cart is empty</span> -->
+                                </div>
+                            </div>
+                            <button class="toggle-menu-nav" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                    class="fa-solid fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        </div>
+    </header>
+    <main id="main-content">
+        <div class="breadcrumbs-section mb-100">
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="breadcrumbs-inner text-center ptb-100">
+                                <h1 class="breadcrumbs-title">product detail</h1>
+                                <nav class="" role="navigation" aria-label="breadcrumbs">
+                                    <ul class="breadcrumb-list">
+                                        <li>
+                                            <a href="/" title="Back to the frontpage">Home</a>
+                                        </li>
+                                        <li>
+                                            /
+                                        </li>
+                                        <span>Products</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-template">
+            <div class="container">
+                <div class="product-details-wrapper row">
+                    <div class="col-md-12 col-lg-6 pull-left">
+                        <div class="tab-content">
+                            <div class="swiper-product-detail">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./public/images/gallery-1.jpg" alt="dummy Product name">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./public/images/gallery-2.jpg" alt="dummy Product name">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./public/images/gallery-3.jpg" alt="dummy Product name">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./public/images/gallery-4.jpg" alt="dummy Product name">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./public/images/gallery-5.jpg" alt="dummy Product name">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="other-views-thumb">
+                            <div class="swiper-thumb-product-detail">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+
+                                        <img src="./public/images/gallery-1.jpg" alt="dummy Product name">
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <img src="./public/images/gallery-2.jpg" alt="dummy Product name">
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <img src="./public/images/gallery-3.jpg" alt="dummy Product name">
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <img src="./public/images/gallery-4.jpg" alt="dummy Product name">
+
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <img src="./public/images/gallery-5.jpg" alt="dummy Product name">
+
+                                    </div>
+                                </div>
+                                <div class="swiper-thumb-product-detail-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 pull-right">
+                        <div class="single-product-details-info">
+                            <div class="product-info">
+                                <form method="post" action="/cart/add" id="AddToCartForm" accept-charset="UTF-8 "
+                                    class="woocommerce-shipping-calculator" enctype="multipart/form-data"><input
+                                        type="hidden" name="form_type" value="product"><input type="hidden" name="utf8"
+                                        value="✓">
+                                    <h2 class="product-name">dummy Product name</h2>
+                                    <div class="rating-box"><span class="shopify-product-reviews-badge"
+                                            data-id="11004897997"></span></div>
+                                    <div class="single-product-price">
+                                        <div class="product-price">
+
+                                            <h4 id="ProductPrice" class="special-price"><span
+                                                    class="money">$79.00</span></h4>
+                                            <h4 id="ComparePrice" class="old-price"> <span class="money">$82.00</span>
+                                            </h4>
+
+                                        </div>
+                                        <!-- For Unit Price  -->
+                                        <!-- <small class="unit_price_box caption  hidden">
+                                            <dd>
+                                                <span id="product__unit_price"></span>
+                                                <span aria-hidden="true">/</span>
+                                                <span id="product__unit_price_value">
+                                                </span>
+                                            </dd>
+                                        </small> -->
+                                        <!-- For Unit Price  -->
+                                    </div>
+                                    <!-- <div class="vendor-sku">
+                                        <span class="product-sku"><strong>SKU:</strong> <span
+                                                class="variant-sku">11253101</span></span>
+                                    </div> -->
+                                    <!-- <div class="product-inventory">
+                                        <span class="inventory-title"><strong>Availability:</strong></span>
+                                        <span class="variant-inventory">4 left in stock</span>
+                                    </div> -->
+
+
+                                    <div class="product-short-desc">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but
+                                            the
+                                            majority have suffered alteration in some form, by injected humour,
+                                            or
+                                            randomised words which don't look even slightly believable.</p>
+
+                                    </div>
+                                    <!-- <div class="selector-wrapper"><label
+                                            for="productSelect-option-0">Size</label><select
+                                            class="single-option-selector" data-option="option1"
+                                            id="productSelect-option-0">
+                                            <option value="xl">xl</option>
+                                            <option value="ml">ml</option>
+                                            <option value="xs">xs</option>
+                                            <option value="X">X</option>
+                                            <option value="L">L</option>
+                                            <option value="M">M</option>
+                                        </select></div>
+                                    <div class="selector-wrapper"><label
+                                            for="productSelect-option-1">Color</label><select
+                                            class="single-option-selector" data-option="option2"
+                                            id="productSelect-option-1">
+                                            <option value="red">red</option>
+                                            <option value="green">green</option>
+                                            <option value="blue">blue</option>
+                                            <option value="white">white</option>
+                                            <option value="yellow">yellow</option>
+                                        </select>
+                                    </div> -->
+                                    <div class="actions">
+                                        <div class="quantity-area">
+                                            <label>Quantity:</label>
+                                            <div class="product-quantity">
+                                                <div class="quantity-area">
+                                                    <div class="cart-plus-minus">
+                                                        <input type="number" name="quantity" value="1" min="1"
+                                                            title="Qty" class="input-text qty">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="cart-btn" id="AddToCart">
+                                            <span id="AddToCartText">Add to cart</span>
+                                        </button>
+                                        <div class="add-to-wishlist">
+                                            <a class="action-wishlist tile-actions--btn flex wishlist-btn wishlist"
+                                                href="javascript: void(0)" button-wishlist=""
+                                                data-product-handle="dummy-product-name-1">
+                                                <span class="add-wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </span>
+                                                <!-- <span class="loading-wishlist"><i
+                                                    class="fa fa-circle-o-notch fa-spin"></i></span>
+                                            <span class="remove-wishlist"><i class="fa fa-heart"></i></span> -->
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="dynamic-checkout">
+                                        <div data-shopify="payment-button" class="shopify-payment-button">
+                                            Buy it now
+                                        </div>
+                                    </div>
+
+
+                                    <div class="product-footer-meta">
+                                        <p><span><strong>Category:</strong></span>
+
+
+                                            <a href="/collections/canned-food">Canned Food</a>,
+
+                                            <a href="/collections/dry-food">Dry Food</a>,
+
+                                            <a href="/collections/food-pouches">Food Pouches</a>
+
+                                        </p>
+                                    </div>
+                                    <div class="product-footer-meta">
+                                        <p><span><strong>Tags:</strong></span>
+
+
+                                            <a href="/collections/all/blue">blue</a>,
+
+                                            <a href="/collections/all/green">green</a>,
+
+                                            <a href="/collections/all/l">L</a>
+
+                                        </p>
+                                    </div>
+                                    <div class="social-links-area">
+                                        <label>share this:</label>
+                                        <div class="social-sharing normal"
+                                            data-permalink="https://my-pets-1.myshopify.com/products/dummy-product-name-1">
+                                            <ul class="social-links">
+
+                                                <li>
+                                                    <a target="_blank"
+                                                        href="//www.facebook.com/sharer.php?u=https://my-pets-1.myshopify.com/products/dummy-product-name-1"
+                                                        class="share-facebook">
+                                                        <i class="fa-brands fa-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank"
+                                                        href="//twitter.com/share?text=dummy%20Product%20name&amp;url=https://my-pets-1.myshopify.com/products/dummy-product-name-1"
+                                                        class="share-twitter">
+                                                        <i class="fa-brands fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a target="_blank"
+                                                        href="//pinterest.com/pin/create/button/?url=https://my-pets-1.myshopify.com/products/dummy-product-name-1&amp;media=http://my-pets-1.myshopify.com/cdn/shop/products/8_1024x1024.jpg?v=1508988278&amp;description=dummy%20Product%20name"
+                                                        class="share-pinterest">
+                                                        <i class="fa-brands fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="custom-payment-options">
+                                        <div>
+                                            <strong>
+                                                <p>Guaranteed safe checkout</p>
+                                            </strong>
+                                        </div>
+                                        <div class="methods-of-payment"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg"
+                                                height="35" alt="amazon payments"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/apple_pay-f6db0077dc7c325b436ecbdcf254239100b35b70b1663bc7523d7c424901fa09.svg"
+                                                height="35" alt="apple pay"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/bitcoin-e41278677541fc32b8d2e7fa41e61aaab2935151a6048a1d8d341162f5b93a0a.svg"
+                                                height="35" alt="bitcoin"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg"
+                                                height="35" alt="google pay"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg"
+                                                height="35" alt="paypal"><img
+                                                src="//my-pets-1.myshopify.com/cdn/shopifycloud/shopify/assets/payment_icons/visa-319d545c6fd255c9aad5eeaad21fd6f7f7b4fdbdb1a35ce83b89cca12a187f00.svg"
+                                                height="35" alt="visa"></div>
+                                    </div>
+
+                                    <input type="hidden" name="product-id" value="11004897997"><input type="hidden"
+                                        name="section-id" value="template--14231146168392__main">
+                                </form>
+                            </div><!-- /.product-info -->
+                        </div><!-- /.single-product-details-info -->
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="product-additional-info">
+                            <div class="additional-info-tabs">
+                                <ul class="nav" role="tablist">
+                                    <li role="presentation" class="" onclick="openTabNine('description', event)">
+                                        <a href="#description" aria-controls="description" role="tab" data-toggle="tab"
+                                            aria-expanded="false">Description</a>
+                                    </li>
+                                    <li role="presentation" class="" onclick="openTabNine('reviews',event)">
+                                        <a href="#review" aria-controls="review" role="tab" data-toggle="tab"
+                                            aria-expanded="false">Reviews</a>
+                                    </li>
+                                    <li role="presentation" class="active" onclick="openTabNine('comment', event)">
+                                        <a href="#data-sheet" aria-controls="data-sheet" role="tab" data-toggle="tab"
+                                            aria-expanded="true">Comments</a>
+                                    </li>
+                                    <li role="presentation" class="" onclick="openTabNine('custom-tab', event)">
+                                        <a href="#customtab1" role="tab" data-toggle="tab" aria-expanded="false">Custom
+                                            Tab-1</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="additional-info-content">
+                                <div class="tab-content">
+                                    <div role="tabpanel" style="display:none" class="tab-pane" id="description">
+                                        <div class="single-additional-info">
+                                            <div class="product-long-desc">
+                                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                                                    has roots in a piece of classical Latin literature from 45 BC,
+                                                    making it over 2000 years old. Richard McClintock, a Latin professor
+                                                    at Hampden-Sydney College in Virginia, looked up one of the more
+                                                    obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                                    going through the cites of the word in classical literature,
+                                                    discovered the undoubtable source. Lorem Ipsum comes from sections
+                                                    1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+                                                    of Good and Evil) by Cicero, written in 45 BC. This book is a
+                                                    treatise on the theory of ethics, very popular during the
+                                                    Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+                                                    amet..", comes from a line in section 1.10.32.</p>
+                                                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                                                    below for those interested. Sections 1.10.32 and 1.10.33 from "de
+                                                    Finibus Bonorum et Malorum" by Cicero are also reproduced in their
+                                                    exact original form, accompanied by English versions from the 1914
+                                                    translation by H. Rackham.</p>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div role="tabpanel" class="tab-pane" id="review">
+                                            <div class="single-additional-info">
+                                                <div class="product-reviews-container">
+                                                    <!-- Failed to render app block "product_reviews_reviews_MhXKdM": app block path "shopify://apps/product-reviews/blocks/reviews/bae150af-8da8-48b2-9867-398188115e5f" does not exist -->
+
+                                                </div>
+                                            </div><!-- /.single-additional-info -->
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane active" id="data-sheet">
+                                            <div class="single-additional-info">
+                                                <!-- disqus comment box start -->
+
+                                                <div id="disqus_recommendations" style="margin-bottom: 12px;"><iframe
+                                                        id="dsq-app5424" name="dsq-app5424" allowtransparency="true"
+                                                        frameborder="0" scrolling="no" tabindex="0" title="Disqus"
+                                                        width="100%"
+                                                        src="https://disqus.com/recommendations/?base=default&amp;f=demo-store&amp;t_u=https%3A%2F%2Fmy-pets-1.myshopify.com%2Fproducts%2Fmeats-biscuit&amp;t_d=Meats%20biscuit%20%E2%80%93%20My%20Pets%20-%20Animal%20Pets%20Shopify%20Theme&amp;t_t=Meats%20biscuit%20%E2%80%93%20My%20Pets%20-%20Animal%20Pets%20Shopify%20Theme#version=a6401fc07e134ef7a00a9db0c830c5f2"
+                                                        horizontalscrolling="no" verticalscrolling="no"
+                                                        style="width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important; display: inline !important; box-sizing: border-box !important;"></iframe>
+                                                </div>
+                                                <div id="disqus_thread"><iframe id="dsq-app8310" name="dsq-app8310"
+                                                        allowtransparency="true" frameborder="0" scrolling="no"
+                                                        tabindex="0" title="Disqus" width="100%"
+                                                        src="https://disqus.com/embed/comments/?base=default&amp;f=demo-store&amp;t_u=https%3A%2F%2Fmy-pets-1.myshopify.com%2Fproducts%2Fmeats-biscuit&amp;t_d=Meats%20biscuit%20%E2%80%93%20My%20Pets%20-%20Animal%20Pets%20Shopify%20Theme&amp;t_t=Meats%20biscuit%20%E2%80%93%20My%20Pets%20-%20Animal%20Pets%20Shopify%20Theme&amp;s_o=default#version=b4b86fd8096fd3a413f323515923c7f3"
+                                                        horizontalscrolling="no" verticalscrolling="no"
+                                                        style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 459px !important;"></iframe>
+                                                </div>
+
+                                                <noscript>Please enable JavaScript to view the <a
+                                                        href="https://disqus.com/?ref_noscript">comments powered by
+                                                        Disqus.</a></noscript>
+
+
+                                                <script id="dsq-count-scr" src="//your-site-name-1.disqus.com/count.js"
+                                                    async=""></script>
+                                            </div>
+                                        </div>
+
+
+                                        <div role="tabpanel" class="tab-pane" id="customtab1">
+                                            <div class="single-additional-info">
+                                                <div class="product-long-desc pro__tab__content__inner">
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div role="tabpanel" style="display:none" class="tab-pane" id="reviews">
+                                        review
+                                    </div>
+                                    <div role="tabpanel" style="display:none" class="tab-pane" id="comment">
+                                        comment
+                                    </div>
+                                    <div role="tabpanel" style="display:none" class="tab-pane" id="custom-tab">
+                                        custom tab
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-related">
+                <div class="container">
+                    <div class="related-product-heading">
+                        <h4 class="category-title">related</h4>
+                    </div>
+                    <div class="all-product related-product-content">
+                        <div class="swiper-product">
+                            <div class="swiper-wrapper">
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-product-button-prev"></div>
+                            <div class="swiper-product-button-next"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-collection">
+                <div class="container">
+                    <div class="collection-product-heading">
+                        <h4 class="category-title">custom Collection</h4>
+                    </div>
+                    <div class="all-product collection-product-content">
+                        <div class="swiper-product">
+                            <div class="swiper-wrapper">
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item -->
+                                <div class="product-item swiper-slide">
+                                    <div class="product-img">
+                                        <a href="">
+                                            <img src="./public/images/plastic-bowl-for-pets.jpg" alt="">
+                                        </a>
+                                        <div class="product-overlay"></div>
+                                        <a class="btn-find-product" href=""><i class="fa fa-search"
+                                                aria-hidden="true"></i></a>
+                                        <a href="" class="btn-add-cart-product"><i class="fa fa-cart-plus"
+                                                aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-name">
+                                            <h6>
+                                                <a href="">1Plastic bowl for pets</a>
+                                            </h6>
+                                        </div>
+                                        <div class="product-review"></div>
+                                        <div class="product-price">
+                                            <h6>
+                                                <span>$80.00</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-product-button-prev"></div>
+                            <div class="swiper-product-button-next"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="footer" class="footer-area">
+        <div class="footer-top ">
+            <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="logo">
+                                <div class="footer-logo">
+                                    <a href="/">
+                                        <img src="./public/images/logo.png" alt="My Pets - Animal Pets Shopify Theme ">
+                                    </a>
+                                </div>
+                                <div class="address">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>Your contact information here. <br>Demo information.</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                            </span>
+                                            <p>+88 3333 6789</p>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fa-solid fa-location-dot"></i>
+                                            </span>
+                                            <p>info@example.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title">Our Services</h6>
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/full-grooming"
+                                                title="">Full Grooming</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/bath-and-dry"
+                                                title="">Bath and Dry</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/styling"
+                                                title="">Styling</a></li>
+                                        <li><a href="https://my-pets-1.myshopify.com/blogs/services/medical-bath"
+                                                title="">Medical Bath</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+
+                                <h6 class="widget-title">Quick Menu</h6>
+
+                                <div class="service-list">
+                                    <ul>
+                                        <li><a href="/account" title="">My account</a></li>
+                                        <li><a href="/pages/wishlist" title="">Wishlist</a></li>
+                                        <li><a href="/checkout" title="">Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item-f col-md-6 col-lg-3 col-sm-12 mbr-40">
+                            <div class="single-footer-widget">
+                                <h6 class="widget-title newsletter-title">Newsletter</h6>
+                                <div class="single-footer-newsletter">
+                                    <p>Lorem ipsum dolor sit amet, consectt us adip isicing elit, sed do edunt.</p>
+                                    <div id="mc_embed_signup">
+                                        <form action="" id="Contact_footer" class="contact-form">
+                                            <input type="hidden" name="form_type" value="customer"><input type="hidden"
+                                                name="utf8" value="✓">
+                                            <div class="submit-form">
+                                                <input class="form-control" type="email" id="Email"
+                                                    placeholder="email@example.com" autocorrect="off"
+                                                    autocapitalize="off">
+                                                <div class="clear">
+                                                    <button type="submit" id="subscribe" class="button" name="commit">
+                                                        <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="copyright-text">
+                            <p></p>
+                            <p>Copyright © 2021 <strong>MyPets </strong>| Built with <strong>MyPets</strong> by
+                                <strong>MyPets</strong>.
+                            </p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="single-footer-soical">
+                            <ul>
+                                <li><a href="#" title="Google-plus"><i class="fa-brands fa-google-plus-g"></i></a></li>
+                                <li><a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.footer-bottom -->
+    </footer>
+    <script src="./public/package/swiper-bundle.min.js"></script>
+    <script src="./public/js/home-swiper.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./public/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/main.js"></script>
+    <script>
+        var swiper1 = new Swiper(".swiper-thumb-product-detail", {
+            loop: false,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+            pagination: {
+                el: '.swiper-thumb-product-detail-pagination',
+                slideToClickedSlide: true,
+                clickable: true,
+            },
+
+        });
+
+        var swiper2 = new Swiper(".swiper-product-detail", {
+            allowTouchMove: false,
+            loop: false,
+            spaceBetween: 10,
+            thumbs: {
+                swiper: swiper1, // Kết nối với swiper1
+            },
+        });
+
+        function openTabNine(tabNine, e) {
+            var i;
+            var x = document.getElementsByClassName("tab-pane");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabNine).style.display = "block";
+            e.currentTarget.parentElement.querySelectorAll('li').forEach(el => {
+                el.classList.remove('active');
+            });
+            e.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

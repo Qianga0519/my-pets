@@ -35,16 +35,12 @@ body {
 
 main#main-content {
     .breadcrumbs-section {
-        background: #f8f8f8;
+        background: #f8f8f8; 
         .breadcrumbs {
             .breadcrumbs-inner {
                 color         : $color-text-gray-6;
-                text-transform: capitalize;
-
-                color: $color-text-gray-6;
-
-
-
+                text-transform: capitalize; 
+                color: $color-text-gray-6; 
                 nav {
                     display: block;
 
@@ -212,7 +208,7 @@ main#main-content {
                                         filter            : alpha(opacity=0);
                                         pointer-events    : none;
                                         visibility        : hidden;
-                                        z-index           : 999;
+                                        z-index           : 1;
                                         -webkit-transition: all .4s ease 0s;
                                         transition        : all .4s ease 0s;
 
@@ -441,6 +437,7 @@ main#main-content {
             .row.pagination {
                 padding: 5px 0;
                 border : 1px solid rgba($color: $color-text-gray-9, $alpha: .4);
+
                 .pagination-area {
                     margin-top: 0;
 

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./public/css/blog.css" />
     <link rel="stylesheet" href="./public/css/blog-detail.css" />
     <link rel="stylesheet" href="./public/css/about-us.css" />
+    <link rel="stylesheet" href="./public/css/contact-us.css" />
+    <link rel="stylesheet" href="./public/css/account.css" />
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 
@@ -232,6 +234,7 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         </div>
     </header>
+
     <main id="main-content">
         <div class="breadcrumbs-section mb-100">
             <div class="breadcrumbs">
@@ -239,7 +242,7 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <div class="breadcrumbs-inner text-center ptb-100">
-                                <h1 class="breadcrumbs-title">About Us</h1>
+                                <h1 class="breadcrumbs-title">Account</h1>
                                 <nav class="" role="navigation" aria-label="breadcrumbs">
                                     <ul class="breadcrumb-list">
                                         <li>
@@ -258,126 +261,73 @@
                 </div>
             </div>
         </div>
-        <div id="about-us" class="about-us-area mb-100">
-            <!-- ABOUT US -->
+        <div id="account" class="account-area mb-100">
             <div class="container">
+                <h6 class="account-heading">My Account</h6>
                 <div class="row">
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-12 about-us-left">
-                        <img src="./public/images/story_aee88b17-96e5-4148-9524-571a7932f94d.png" alt="">
+                    <div class="col-md-6 col-sm-12">
+                        <div id="CustomerLoginForm" class="login-form-area">
+                            <form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8"
+                                data-login-with-shop-sign-in="true"><input type="hidden" name="form_type"
+                                    value="customer_login"><input type="hidden" name="utf8" value="✓">
+                                <div class="login-info">
+                                    <h6>Login</h6>
+                                    <div class="single-field">
+                                        <label for="CustomerEmail">Email<span class="required">*</span></label>
+                                        <input type="email" name="customer[email]" id="CustomerEmail"
+                                            class="input-text">
+                                    </div>
+                                    <div class="single-field">
+                                        <label for="CustomerPassword">Password<span class="required">*</span></label>
+                                        <input type="password" value="" name="customer[password]" id="CustomerPassword"
+                                            class="input-text">
+                                    </div>
+
+                                    <div class="form-action">
+                                        <span class="password-recover"><a href="#recover" id="RecoverPassword">Forgot
+                                                your password?</a></span>
+
+                                        <input type="submit" class="login-btn" value="Sign In">
+                                    </div>
+                                </div>
+                                <input type="hidden" name="return_url" value="/account">
+                            </form>
+                        </div>
+                        <div id="RecoverPasswordForm" class="recover-form-area" style="display: none;">
+
+                            <h6>Reset your password</h6>
+                            <p>We will send you an email to reset your password.</p>
+
+                            <div class="recover-password-form">
+                                <form method="post" action="/account/recover" accept-charset="UTF-8"><input
+                                        type="hidden" name="form_type" value="recover_customer_password"><input
+                                        type="hidden" name="utf8" value="✓">
+                                    <div class="single-field">
+                                        <label for="RecoverEmail">Email</label>
+                                        <input type="email" value="" name="email" id="RecoverEmail" placeholder="Email">
+                                    </div>
+
+                                    <div class="form-action">
+                                        <input type="submit" class="recover-btn" value="Submit">
+                                        <button type="button" id="HideRecoverPasswordLink"
+                                            class="cancel-btn">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xs-12 about-us-right">
-                        <h1>Our Story</h1>
-                        <h6>From 1990 to 2017</h6>
-                        <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a.
-                            Aliquam condimentum mattis neque sed pretium. Vestibulum quis porst itor duiest Quisque
-                            viverra nunc mi, a pulvinar purus condimentum. Vestibulum quis porttitor dui! Quisque
-                            viverra nunc mi, a pulvinar purus condim entum.
-
-                        </p>
-                        <p> Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condim entum a.
-                            Aliquam condimentum mattis neque sed pretium. Vestibulum quis porst itor duiest Quisque
-                            viverra nunc mi, a pulvinar purus condimentum. Vestibulum quis porttitor dui! Quisque
-                            viverra nunc mi, a pulvinar purus condim entum.</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="our-team" class="our-team-area mb-100">
-            <!-- ABOUT US -->
-            <div class="container">
-                <h5 class="title-our-team">crazy team</h5>
-                <div class="team-members-area">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/4_3bdb70a3-3179-4eea-8313-fa57407905fa_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="registration-form-area">
+                            <form action="#" method="post">
+                                <div class="registration-info">
+                                    <h6>Register</h6>
+                                    <p>By creating an account you will be able to shop faster, be up to date on an
+                                        order's status, and keep track of the orders you have previously made. </p>
+                                    <div class="form-action">
+                                        <a href="/account/register" class="register-btn">Register</a>
                                     </div>
                                 </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Sara</h6>
-                                    <p class="member-designation">Admin</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/2_0fc5f14b-10cc-4a66-ad8b-c1803f6d0469_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Smith</h6>
-                                    <p class="member-designation">Designer</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/3_b8ec880c-ec37-4343-9753-045ffad96a85_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Anny</h6>
-                                    <p class="member-designation">Researcher</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
-                            <div class="single-team-member">
-                                <div class="member-img">
-                                    <a href="#">
-                                        <img src="//my-pets-1.myshopify.com/cdn/shop/files/1_27d3a851-cd80-4ad8-92d5-8f7279e83958_large.jpg?v=1613725325"
-                                            alt="">
-                                    </a>
-                                    <div class="member-social-links">
-                                        <ul>
-                                            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-tumblr"></i></a></li>
-                                            <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="member-info">
-                                    <h6 class="member-name">Jenny</h6>
-                                    <p class="member-designation">Developer</p>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -51,3 +51,24 @@ const swiperTestimonial = new Swiper('.swiper-testimonial', {
     },
     slidesPerView: 1,
 });
+
+// const swiperProductDetail = new Swiper('.swiper-product-detail', {
+//     loop: false,
+//     pagination: {
+//         el: '.swiper-pagination',
+//         clickable: true,
+//     },
+//     effect: 'creative', // Kích hoạt hiệu ứng sáng tạo
+//     creativeEffect: {
+//         prev: {
+//             // Hiệu ứng cho slide trước
+//             translate: ['-50%', 0, -500], // Dịch chuyển trục X, Y, Z
+//             opacity: 0.5, // Mờ đi
+//         },
+//         next: {
+//             // Hiệu ứng cho slide tiếp theo
+//             translate: ['50%', 0, -500],
+//             opacity: 0.5,
+//         },
+//     },
+// });
